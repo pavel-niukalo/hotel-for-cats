@@ -25,10 +25,23 @@
             <a class="main-nav__link" href="#Rooms">Номера</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Отзывы</a>
+            <a class="main-nav__link" href="#Reviews">Отзывы</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+            <a class="main-nav__link" href="#Contacts">Контакты</a>
+          </li>
+        </ul>
+
+        <p class="main-nav__phone">8 (800) 333-55-99</p>
+        <ul class="main-nav__social social">
+          <li>
+            <a class="social__link" href="#" aria-label="facebook"></a>
+          </li>
+          <li>
+            <a class="social__link" href="#" aria-label="instagram"></a>
+          </li>
+          <li>
+            <a class="social__link" href="#" aria-label="vk"></a>
           </li>
         </ul>
       </nav>
@@ -43,8 +56,8 @@
         <a class="page-promo__link button">Забронировать</a>
       </section>
 
-      <section class="features">
-        <h2 id="WhyWe" class="features__heading">Почему мы?</h2>
+      <section id="WhyWe" class="features">
+        <h2 class="features__heading">Почему мы?</h2>
 
         <div class="features__item">
           <h3 class="features__item-heading">Комфортная температура</h3>
@@ -72,14 +85,14 @@
         </div>
 
         <div class="features__item">
-          <h3 class="features__item-heading">ЛУчшие ветеринары</h3>
+          <h3 class="features__item-heading">Лучшие ветеринары</h3>
           <p class="features__description">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
         </div>
       </section>
 
-      <section class="rooms">
-        <h2 id="Rooms" class="rooms__heading">Номера</h2>
-        <div class="rooms__item">
+      <section id="Rooms" class="rooms">
+        <h2 class="rooms__heading">Номера</h2>
+        <div class="rooms__item rooms__item--one">
           <img class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
           <h2 class="rooms__item-heading">Эконом плюс</h2>
           <ul class="rooms__list">
@@ -88,17 +101,123 @@
             <li class="rooms__list-item">Цена за сутки: 200₽</li>
           </ul>
           <a class="rooms__link button">Забронировать</a>
-
-          <div class="rooms__slider slider">
-            <button class="slider__toogle slider__toogle--one" type="button"></button>
-            <button class="slider__toogle slider__toogle--two" type="button"></button>
-            <button class="slider__toogle slider__toogle--three" type="button"></button>
-          </div>
         </div>
+
+        <div class="rooms__item rooms__item--two">
+          <img class="rooms__picture" width="290" height="192" alt="Серая китса на когтеточке">
+          <h2 class="rooms__item-heading">Комфорт</h2>
+          <ul class="rooms__list">
+            <li class="rooms__list-item">Площадь - 1,13 м<sup>2</sup></li>
+            <li class="rooms__list-item">Размеры (ШхГхВ)<br>100х125х250х см</li>
+            <li class="rooms__list-item">Цена за сутки: 250₽</li>
+          </ul>
+          <a class="rooms__link button">Забронировать</a>
+        </div>
+
+        <div class="rooms__item rooms__item--three">
+          <img class="rooms__picture" width="290" height="192" alt="Китса в корзинке у окна">
+          <h2 class="rooms__item-heading">Сьют</h2>
+          <ul class="rooms__list">
+            <li class="rooms__list-item">Площадь - 1,56 м<sup>2</sup></li>
+            <li class="rooms__list-item">Размеры (ШхГхВ)<br>125х125х180х см</li>
+            <li class="rooms__list-item">Цена за сутки: 350₽</li>
+          </ul>
+          <a class="rooms__link button">Забронировать</a>
+        </div>
+
+        <div class="rooms__slider slider">
+          <button class="slider__toogle slider__toogle--one" type="button"></button>
+          <button class="slider__toogle slider__toogle--two" type="button"></button>
+          <button class="slider__toogle slider__toogle--three" type="button"></button>
+        </div>
+      </section>
+
+      <section id="Reviews" class="reviews">
+        <h2 class="reviews__heading">Отзывы</h2>
+        <div class="reviews__item">
+          <blockquote class="reviews__quote">
+            <p class="reviews__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="reviews__slider slider">
+          <button class="slider__toogle slider__toogle--one" type="button"></button>
+          <button class="slider__toogle slider__toogle--two" type="button"></button>
+          <button class="slider__toogle slider__toogle--three" type="button"></button>
+        </div>
+      </section>
+
+      <section id="Contacts" class="contacts">
+        <h2 class="contacts__heading">Как нас найти</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <b>Адрес</b>
+            <p>Санкт-Петербург, ул Большая Конюшенная, д 19</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>Режим работы</b>
+            <p>Ежедневно, с 9:00 до 20:00</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>Телефон</b>
+            <p>8 (800) 333-55-99</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>E-mail</b>
+            <p>info@cat-hotel.ru</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>Социальные сети</b>
+            <ul class="contacts__social social">
+              <li>
+                <a class="social__link" href="#" aria-label="facebook"></a>
+              </li>
+              <li>
+                <a class="social__link" href="#" aria-label="instagram"></a>
+              </li>
+              <li>
+                <a class="social__link" href="#" aria-label="vk"></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Месторасположение на карте</h2>
+        <div id="ymap"></div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <a class="footer__logo"></a>
 
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#WhyWe">Почему мы?</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Rooms">Номера</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Reviews">Отзывы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="copyright">
+        <p>2019 Все права защищены</p>
+        <a>Политика конфиденциальности</a>
+      </div>
+    </footer>
   </body>
 </html>
