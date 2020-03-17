@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Котейка. Номера гостиницы</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <svg style="display: none;"></svg>
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html"></a>
+
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__open" type="button" aria-label="Открыть меню"></button>
+        <button class="main-nav__close" type="button" aria-label="Закрыть меню"></button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#Rooms">Наши номера</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#Promotion">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#Contacts">Контакты</a>
+          </li>
+        </ul>
+
+        <p class="main-nav__phone">8 (800) 333-55-99</p>
+        <ul class="main-nav__social social">
+          <li>
+            <a class="social__link" href="#" aria-label="facebook"></a>
+          </li>
+          <li>
+            <a class="social__link" href="#" aria-label="instagram"></a>
+          </li>
+          <li>
+            <a class="social__link" href="#" aria-label="vk"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="Rooms" class="page-heading">Наши номера</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры и сортировка</h2>
+        <button class="filters__open" type="button" aria-label="Открыть фильтры">Фильтры</button>
+
+        <select class="filters__sort">
+          <option value="increas-square" selected>По площади</option>
+          <option value="reduce-square">По площади</option>
+          <option value="increas-price">По цене</option>
+          <option value="reduce-price">По цене</option>
+        </select>
+      </section>
+
+      <section class="cards">
+        <h2 class="visually-hidden">Варианты номеров</h2>
+        <div class="cards__item">
+          <img src="" class="cards__img" width="290" height="185" alt="Серая котейка на лежанке">
+
+          <div class="cards__description">
+            <h3 class="cards__heading">Эконом</h3>
+            <ul class="cards__list">
+              <li class="cards__list-item">Размеры (ШхГхВ) - 90х70х180х см</li>
+              <li class="cards__list-item">Площадь - 0,63 м<sup>2</sup></li>
+              <li class="cards__list-item">Оснащение номера
+                <span class="cards__features cards__features--empty" data-tooltip="Пустой номер"></span>
+              </li>
+              <li class="cards__list-item">Цена за сутки: 100₽</li>
+            </ul>
+
+            <a class="cards__link button" href="booking.html">Забронировать</a>
+          </div>
+        </div>
+
+        <div id="economyPlus" class="cards__item">
+          <img src="" class="cards__img" width="290" height="185" alt="Богатка на когтеточке">
+
+          <div class="cards__description">
+            <h3 class="cards__heading">Эконом плюс</h3>
+            <ul class="cards__list">
+              <li class="cards__list-item">Размеры (ШхГхВ) - 90х100х180х см</li>
+              <li class="cards__list-item">Площадь - 0,90 м<sup>2</sup></li>
+              <li class="cards__list-item">Оснащение номера
+                <span class="cards__features cards__features--lying" data-tooltip="Лежак"></span>
+                <span class="cards__features cards__features--claw" data-tooltip="Когтеточка"></span>
+              </li>
+              <li class="cards__list-item">Цена за сутки: 200₽</li>
+            </ul>
+
+            <a class="cards__link button" href="booking.html">Забронировать</a>
+          </div>
+        </div>
+
+        <div id="comfort" class="cards__item">
+          <img src="" class="cards__img" width="290" height="185" alt="Британка на когтеточке">
+
+          <div class="cards__description">
+            <h3 class="cards__heading">Комфорт</h3>
+            <ul class="cards__list">
+              <li class="cards__list-item">Размеры (ШхГхВ) - 100х125х180х см</li>
+              <li class="cards__list-item">Площадь - 1,13 м<sup>2</sup></li>
+              <li class="cards__list-item">Оснащение номера
+                <span class="cards__features cards__features--lying" data-tooltip="Лежак"></span>
+                <span class="cards__features cards__features--claw" data-tooltip="Когтеточка"></span>
+                <span class="cards__features cards__features--playComplex" data-tooltip="Игровой комплекс"></span>
+              </li>
+              <li class="cards__list-item">Цена за сутки: 250₽</li>
+            </ul>
+
+            <a class="cards__link button" href="booking.html">Забронировать</a>
+          </div>
+        </div>
+
+        <div id="sue" class="cards__item">
+          <img src="" class="cards__img" width="290" height="185" alt="Китса в корзинке у окна">
+
+          <div class="cards__description">
+            <h3 class="cards__heading">Сьют</h3>
+            <ul class="cards__list">
+              <li class="cards__list-item">Размеры (ШхГхВ) - 125х125х180х см</li>
+              <li class="cards__list-item">Площадь - 1,56 м<sup>2</sup></li>
+              <li class="cards__list-item">Оснащение номера
+                <span class="cards__features cards__features--lying" data-tooltip="Лежак"></span>
+                <span class="cards__features cards__features--claw" data-tooltip="Когтеточка"></span>
+                <span class="cards__features cards__features--playComplex" data-tooltip="Игровой комплекс"></span>
+              </li>
+              <li class="cards__list-item">Цена за сутки: 350₽</li>
+            </ul>
+
+            <a class="cards__link button" href="booking.html">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="cards__item">
+          <img src="" class="cards__img" width="290" height="185" alt="Рыжая киса в лежаке">
+
+          <div class="cards__description">
+            <h3 class="cards__heading">Люкс</h3>
+            <ul class="cards__list">
+              <li class="cards__list-item">Размеры (ШхГхВ) - 160х160х180х см</li>
+              <li class="cards__list-item">Площадь - 2,56 м<sup>2</sup></li>
+              <li class="cards__list-item">Оснащение номера
+                <span class="cards__features cards__features--lying" data-tooltip="Лежак"></span>
+                <span class="cards__features cards__features--claw" data-tooltip="Когтеточка"></span>
+                <span class="cards__features cards__features--playComplex" data-tooltip="Игровой комплекс"></span>
+                <span class="cards__features cards__features--house" data-tooltip="Домик"></span>
+              </li>
+              <li class="cards__list-item">Цена за сутки: 500₽</li>
+            </ul>
+
+            <a class="cards__link button" href="booking.html">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="cards__item">
+          <img src="" class="cards__img" width="290" height="185" alt="Белая китса играет">
+
+          <div class="cards__description">
+            <h3 class="cards__heading">Супер-Люкс</h3>
+            <ul class="cards__list">
+              <li class="cards__list-item">Размеры (ШхГхВ) - 180х160х180х см</li>
+              <li class="cards__list-item">Площадь - 2,88 м<sup>2</sup></li>
+              <li class="cards__list-item">Оснащение номера
+                <span class="cards__features cards__features--lying" data-tooltip="Лежак"></span>
+                <span class="cards__features cards__features--claw" data-tooltip="Когтеточка"></span>
+                <span class="cards__features cards__features--playComplex" data-tooltip="Игровой комплекс"></span>
+                <span class="cards__features cards__features--house" data-tooltip="Домик"></span>
+              </li>
+              <li class="cards__list-item">Цена за сутки: 600₽</li>
+            </ul>
+
+            <a class="cards__link button" href="booking.html">Забронировать</a>
+          </div>
+        </div>
+      </section>
+
+      <article id="Promotion" class="promo">
+        <h2>Каждый 7-й день<br>бесплатно!</h2>
+        <p>Акция действует при размещении в номерах "Люкс" и "Супер-Люкс"</p>
+        <a class="promo__link button" href="booking.html">Забронировать</a>
+      </article>
+
+      <section id="Contacts" class="contacts">
+        <h2 class="contacts__heading">Как нас найти</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <b>Адрес</b>
+            <p>Санкт-Петербург, ул Большая Конюшенная, д 19</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>Режим работы</b>
+            <p>Ежедневно, с 9:00 до 20:00</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>Телефон</b>
+            <p>8 (800) 333-55-99</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>E-mail</b>
+            <p>info@cat-hotel.ru</p>
+          </li>
+
+          <li class="contacts__item">
+            <b>Социальные сети</b>
+            <ul class="contacts__social social">
+              <li>
+                <a class="social__link" href="#" aria-label="facebook"></a>
+              </li>
+              <li>
+                <a class="social__link" href="#" aria-label="instagram"></a>
+              </li>
+              <li>
+                <a class="social__link" href="#" aria-label="vk"></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Месторасположение на карте</h2>
+        <div id="ymap"></div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="footer__logo"></a>
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index.html#WhyWe">Почему мы?</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Rooms">Номера</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="index.html#Reviews">Отзывы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Contacts"></a>Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="copyright">
+        <p>2019 Все права защищены</p>
+        <a>Политика конфиденциальности</a>
+      </div>
+    </footer>
+
+<!-- Модальное окно с фильтрами -->
+    <template id="filters">
+      <button class="filters__close" type="button" aria-label="Закрыть фильтры"></button>
+
+      <div class="filters__wrapper">
+        <form class="filters__form form">
+          <fieldset class="form__price">
+            <legend>Цена за сутки, ₽</legend>
+            <input class="form__input" name="priceMin" type="text" placeholder="от 100">
+            <input class="form__input" name="priceMax" type="text" placeholder="до 600">
+          </fieldset>
+
+          <fieldset class="form__square">
+            <legend>Площадь</legend>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              0,63 м<sup>2</sup>
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              0,90 м<sup>2</sup>
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              1,13 м<sup>2</sup>
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              1,56 м<sup>2</sup>
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              2,56 м<sup>2</sup>
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              2,88 м<sup>2</sup>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__features">
+            <legend>Оснащение номера</legend>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" name="emptyRoom" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              Пустой номер
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" name="lying" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              Лежак
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" name="claw" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              Когтеточка
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" name="playComplex" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              Игровой комплекс
+            </label>
+            <label class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" name="house" type="checkbox" checked>
+              <span class="checkbox__icon"></span>
+              Домик
+            </label>
+          </fieldset>
+
+          <button class="form__submit" type="submit">Подобрать</button>
+          <button class="form__reset" type="reset">Сбросить фильтр</button>
+        </form>
+      </div>
+    </template>
+  </body>
+</html>
