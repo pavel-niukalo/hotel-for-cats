@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Котейка. Бронирование номера</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <svg style="display: none;"></svg>
-
     <header class="page-header">
       <a class="page-header__logo" href="index.html"></a>
 
       <nav class="main-nav main-nav--nojs">
         <button class="main-nav__open" type="button" aria-label="Открыть меню"></button>
-        <button class="main-nav__close" type="button" aria-label="Закрыть меню"></button>
+        <button class="main-nav__close close" type="button" aria-label="Закрыть меню"></button>
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -49,11 +48,35 @@
 
     <main>
       <section class="checkRoom">
+        <div class="checkRoom__gallery gallery">
+          <img src="" class="gallery__checkImg" width="290" height="288" alt="Белая китса играет">
+          <img src="" class="gallery__img" width="86" height="64" alt="Милый котенок">
+          <img src="" class="gallery__img" width="86" height="64" alt="Еще милый котенок">
+          <img src="" class="gallery__img" width="86" height="64" alt="Вдумчивая китса">
+        </div>
 
+        <div class="checkRoom__description">
+          <h2 class="checkRoom__heading">Супер-Люкс</h2>
+          <ul class="checkRoom__list">
+            <li class="checkRoom__item">Размеры (ШхГхВ) - 180х160х180х см</li>
+            <li class="checkRoom__item">Площадь - 2,88 м<sup>2</sup></li>
+            <li class="checkRoom__item">Оснащение номера
+              <ul>
+                <li>Лежак</li>
+                <li>Домик</li>
+                <li>Игровой комплекс - 3 яруса</li>
+                <li>Когтеточка</li>
+              </ul>
+            </li>
+            <li class="checkRoom__item">Цена за сутки: 600₽</li>
+          </ul>
+
+          <a class="checkRoom__link button" href="booking-nojs.html">Забронировать</a>
+        </div>
       </section>
 
       <section id="Rooms" class="rooms">
-        <h2 class="rooms__heading">Номера</h2>
+        <h2 class="rooms__heading">Другие номера</h2>
         <div class="rooms__item rooms__item--one">
           <img src="" class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
           <h2 class="rooms__item-heading">Эконом плюс</h2>
@@ -165,6 +188,39 @@
         <a>Политика конфиденциальности</a>
       </div>
     </footer>
+
+    <template id="booking">
+      <article class="booking">
+        <button class="booking__close close" type="button" aria-label="Закрыть окно бронирования"></button>
+        <h2 class="booking__heading">Забронировать номера</h2>
+
+        <form class="booking__form">
+          <input class="booking__input" type="text" placeholder="Ваше имя">
+          <input class="booking__input" type="text" placeholder="Имя Питомца">
+          <input class="booking__input" type="tel" placeholder="Телефон">
+          <input class="booking__input" type="email" placeholder="E-mail">
+
+          <fieldset class="booking__date">
+            <label class="booking__label" for="dateArrival">с</label>
+            <input id="dateArrival" class="booking__input booking__input--date" type="date" placeholder="26.01.2020">
+
+            <label class="booking__label" for="dateDeparture">по</label>
+            <input id="dateDeparture" class="booking__input booking__input--date" type="date" placeholder="26.02.2020">
+          </fieldset>
+
+          <button class="booking__submit button" type="submit">Отправить заявку</button>
+        </form>
+      </article>
+    </template>
+
+    <template id="success">
+      <div class="success">
+        <button class="success__close close" type="button" aria-label="Закрыть"></button>
+        <h2 class="success__heading">Спасибо за заявку!</h2>
+        <p class="success__text">Мы свяжемся с вами в ближайшее время</p>
+        <button class="success__button button" type="button">Ок</button>
+      </div>
+    </template>
 
   </body>
 

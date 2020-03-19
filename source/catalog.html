@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Котейка. Номера гостиницы</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <svg style="display: none;"></svg>
-
     <header class="page-header">
       <a class="page-header__logo" href="index.html"></a>
 
@@ -263,83 +262,83 @@
 
 <!-- Модальное окно с фильтрами -->
     <template id="filters">
-      <button class="filters__close" type="button" aria-label="Закрыть фильтры"></button>
+        <div class="filters__wrapper">
+          <button class="filters__close close" type="button" aria-label="Закрыть фильтры"></button>
+          
+          <form class="filters__form form">
+            <fieldset class="form__price">
+              <legend>Цена за сутки, ₽</legend>
+              <input class="form__input" name="priceMin" type="text" placeholder="от 100">
+              <input class="form__input" name="priceMax" type="text" placeholder="до 600">
+            </fieldset>
 
-      <div class="filters__wrapper">
-        <form class="filters__form form">
-          <fieldset class="form__price">
-            <legend>Цена за сутки, ₽</legend>
-            <input class="form__input" name="priceMin" type="text" placeholder="от 100">
-            <input class="form__input" name="priceMax" type="text" placeholder="до 600">
-          </fieldset>
+            <fieldset class="form__square">
+              <legend>Площадь</legend>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                0,63 м<sup>2</sup>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                0,90 м<sup>2</sup>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                1,13 м<sup>2</sup>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                1,56 м<sup>2</sup>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                2,56 м<sup>2</sup>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                2,88 м<sup>2</sup>
+              </label>
+            </fieldset>
 
-          <fieldset class="form__square">
-            <legend>Площадь</legend>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              0,63 м<sup>2</sup>
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              0,90 м<sup>2</sup>
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              1,13 м<sup>2</sup>
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              1,56 м<sup>2</sup>
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              2,56 м<sup>2</sup>
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              2,88 м<sup>2</sup>
-            </label>
-          </fieldset>
+            <fieldset class="form__features">
+              <legend>Оснащение номера</legend>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" name="emptyRoom" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                Пустой номер
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" name="lying" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                Лежак
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" name="claw" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                Когтеточка
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" name="playComplex" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                Игровой комплекс
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" name="house" type="checkbox" checked>
+                <span class="checkbox__icon"></span>
+                Домик
+              </label>
+            </fieldset>
 
-          <fieldset class="form__features">
-            <legend>Оснащение номера</legend>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" name="emptyRoom" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              Пустой номер
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" name="lying" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              Лежак
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" name="claw" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              Когтеточка
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" name="playComplex" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              Игровой комплекс
-            </label>
-            <label class="form__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" name="house" type="checkbox" checked>
-              <span class="checkbox__icon"></span>
-              Домик
-            </label>
-          </fieldset>
-
-          <button class="form__submit" type="submit">Подобрать</button>
-          <button class="form__reset" type="reset">Сбросить фильтр</button>
-        </form>
-      </div>
+            <button class="form__submit" type="submit">Подобрать</button>
+            <button class="form__reset" type="reset">Сбросить фильтр</button>
+          </form>
+        </div>
     </template>
   </body>
 </html>
