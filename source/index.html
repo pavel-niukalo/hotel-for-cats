@@ -10,40 +10,52 @@
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo"></a>
+      <div class="page-header__wrapper container">
+        <a class="page-header__logo"></a>
 
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__open" type="button" aria-label="Открыть меню"></button>
-        <button class="main-nav__close" type="button" aria-label="Закрыть меню"></button>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__open" type="button" aria-label="Открыть меню">
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1H23M1 8H23M1 15H23" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="main-nav__close" type="button" aria-label="Закрыть меню">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L15 15M15 1L1 15" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#WhyWe">Почему мы?</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#Rooms">Номера</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#Reviews">Отзывы</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#Contacts">Контакты</a>
-          </li>
-        </ul>
+          <div class="main-nav__list-wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#WhyWe">Почему мы?</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#Rooms">Номера</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#Reviews">Отзывы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#Contacts">Контакты</a>
+              </li>
+            </ul>
 
-        <p class="main-nav__phone">8 (800) 333-55-99</p>
-        <ul class="main-nav__social social">
-          <li>
-            <a class="social__link" href="#" aria-label="facebook"></a>
-          </li>
-          <li>
-            <a class="social__link" href="#" aria-label="instagram"></a>
-          </li>
-          <li>
-            <a class="social__link" href="#" aria-label="vk"></a>
-          </li>
-        </ul>
-      </nav>
+            <p class="main-nav__phone">8 (800) 333-55-99</p>
+            <ul class="main-nav__social social">
+              <li>
+                <a class="social__link" href="#" aria-label="facebook"></a>
+              </li>
+              <li>
+                <a class="social__link" href="#" aria-label="instagram"></a>
+              </li>
+              <li>
+                <a class="social__link" href="#" aria-label="vk"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -218,5 +230,7 @@
         <a>Политика конфиденциальности</a>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
