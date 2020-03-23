@@ -44,6 +44,7 @@ body {
   padding: 0;
 
   font-family: "Lato", "Arial", sans-serif;
+  font-kerning: none;
   font-size: 15px;
   line-height: 21px;
   font-weight: 400;
@@ -66,7 +67,7 @@ a {
 
   border: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .container {
@@ -74,6 +75,14 @@ a {
   max-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.section-heading {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  text-align: center;
 }
 
 @media (min-width: 660px) {
@@ -95,6 +104,8 @@ a {
   width: 100%;
 
   background-color: #FFFEFD;
+
+  z-index: 1;
 }
 
 .page-header__logo {
@@ -127,7 +138,7 @@ a {
   color: #1A212F;
 }
 
-.main-nav__open, 
+.main-nav__open,
 .main-nav__close {
   position: fixed;
 
@@ -138,7 +149,7 @@ a {
 }
 
 .main-nav__open {
-  right: 14px;
+  right: 24px;
   top: 23px;
 }
 
@@ -269,7 +280,7 @@ a {
 
 .page-promo {
   padding-top: 105px;
-  padding-bottom: 285px;
+  padding-bottom: 195px;
 
   text-align: center;
 
@@ -299,5 +310,333 @@ a {
 
   font-size: 16px;
   line-height: 19px;
+}
+
+.page-promo__link {
+  margin: 36px auto;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* button */
+
+.white-button {
+  display: block;
+  width: 114px;
+  padding: 14px 62px 17px 30px;
+
+  color: #1A212F;
+
+  background-color: #FFFEFD;
+  background-image: url(../img/paworange.svg);
+  background-repeat: no-repeat;
+  background-position: 163px;
+  box-shadow: 0px 5px 25px rgba(37, 55, 90, 0.1);
+  border-radius: 25px;
+}
+
+.white-button:hover,
+.white-button:focus {
+  color: #FFFEFD;
+
+  background-color: #1A212F;
+  background-image: url(../img/pawwhitehover.svg);
+
+  transition: 0.3s linear;
+}
+
+.white-button:active {
+  opacity: 0.5;
+}
+
+.orange-button {
+  display: block;
+  width: 128px;
+  padding: 14px 62px 15px 50px;
+
+  color: #FFFEFD;
+
+  background-color: #FF7236;
+  background-image: url(../img/pawwhitehover.svg);
+  background-repeat: no-repeat;
+  background-position: 197px;
+  box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  border-radius: 25px;
+}
+
+.orange-button:hover,
+.orange-button:focus {
+  color: #FFFEFD;
+
+  background-color: #1A212F;
+  background-image: url(../img/paworange.svg);
+
+  transition: 0.3s linear;
+}
+
+.orange-button:active {
+  opacity: 0.5;
+}
+
+/* features */
+
+.features {
+  position: relative;
+
+  padding-top: 45px;
+}
+
+.features::before {
+  content: "";
+
+  position: absolute;
+  top: 47px;
+  right: -10px;
+
+  width: 120px;
+  height: 115px;
+
+  background-image: url(../img/pawbackground.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  z-index: -1;
+}
+
+.features__heading {
+  margin-bottom: 33px;
+}
+
+.features__item {
+  width: 235px;
+  padding: 92px 30px 21px 25px;
+  margin-bottom: 30px;
+
+  text-align: left;
+
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: 25px 25px;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+}
+
+.features__item:hover,
+.rooms__item:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s linear;
+}
+
+.features__item--temperature {
+  padding-bottom: 20px;
+  background-image: url(../img/temperature.svg);
+}
+
+.features__item--video {
+  width: 240px;
+  padding-right: 25px;
+
+  background-image: url(../img/video.svg);
+}
+
+.features__item--taxi {
+  width: 240px;
+  padding-right: 25px;
+
+  background-image: url(../img/taxi.svg);
+}
+
+.features__item--food {
+  width: 255px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+
+  background-image: url(../img/food.svg);
+}
+
+.features__item--walk {
+  width: 250px;
+  padding-right: 15px;
+
+  background-image: url(../img/walk.svg);
+}
+
+.features__item--medcine {
+  background-image: url(../img/medcine.svg);
+}
+
+.features__item-heading {
+  margin-bottom: 8px;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
   font-weight: 500;
+}
+
+.features__description {
+  width: 220px;
+  margin: 0;
+}
+
+.features__description--video {
+  width: 240px;
+}
+
+.features__description--taxi {
+  width: 235px;
+}
+
+.features__description--food {
+  width: 240px;
+}
+
+.features__description--walk {
+  width: 250px;
+}
+
+.features__description--medcine {
+  width: 215px;
+}
+
+/* rooms */
+
+.rooms {
+  position: relative;
+
+  padding-top: 30px;
+}
+
+.rooms::before {
+  content: "";
+
+  position: absolute;
+  top: 83px;
+  left: 0px;
+
+  width: 150px;
+  height: 50px;
+
+  background-image: url(../img/fish.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  z-index: -1;
+}
+
+.rooms__heading {
+  margin-bottom: 32px;
+}
+
+.rooms__item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Временно */
+.rooms__item--two,
+.rooms__item--three {
+  display: none;
+}
+/* Временно */
+
+.room__description {
+  padding: 20px 25px;
+
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.rooms__item-heading {
+  margin: 0;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.rooms__list {
+  padding: 0;
+  padding-top: 12px;
+  margin: 0;
+
+  list-style: none;
+}
+
+.rooms__list-item {
+  margin-bottom: 10px;
+
+  line-height: 18px;
+}
+
+.rooms__list-item::before {
+  content: "";
+
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+
+  margin-right: 8px;
+
+  background-color: #FAC663;
+  border-radius: 50%;
+}
+
+.rooms__list-item span {
+  display: block;
+  margin-top: 3px;
+  margin-left: 19px;
+}
+
+.rooms__link {
+  margin: 22px auto 5px auto;
+}
+
+.rooms__slider {
+  margin: 30px auto;
+}
+
+/* slider */
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.slider__toogle {
+  padding: 0;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: #E1E1E1;
+  border: 0;
+  border-radius: 50%;
+}
+
+.slider__toogle:hover,
+.slider__toogle:focus {
+  background-color: #1A212F;
+
+  transition: 0.3s linear;
+}
+
+.slider__toogle:active {
+  opacity: 0.5;
+
+  transition: 0.3s linear;
+}
+
+.slider__toogle--active,
+.slider__toogle--active:hover,
+.slider__toogle--active:focus,
+.slider__toogle--active:active {
+  background-color: #FAC663;
+
+  opacity: 1;
 }
