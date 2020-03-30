@@ -105,7 +105,7 @@ a {
 
   background-color: #FFFEFD;
 
-  z-index: 1;
+  z-index: 10;
 }
 
 .page-header__logo {
@@ -1087,12 +1087,12 @@ select {
   content: "";
 
   position: absolute;
-  left: 0;
-  top: -50px;
+  left: -70px;
+  top: -48px;
 
   box-sizing: border-box;
   width: auto;
-  padding: 10px;
+  padding: 9px 10px 7px 10px;
 
   font-size: 12px;
   line-height: 14px;
@@ -1102,17 +1102,111 @@ select {
   border: 1px solid #FAC663;
   border-radius: 4px;
 
+  z-index: 2;
   pointer-events: none; /* Подсказка */
-  /* opacity: 0; Подсказка невидима */
+  opacity: 0; /* Подсказка невидима */
 
-  transition: 0.3s;
+  transition: 0.3s linear;
+}
+
+.cards__features-item:hover::before {
+  opacity: 1; /* Показываем подсказку */
 }
 
 .cards__features-item--empty:hover::before {
   content: "Пустой номер";
 
-  left: -20px;
+  left: -32px;
 
   width: 99px;
-  opacity: 1; /* Показываем подсказку */
+}
+
+.cards__features-item--lying:hover::before {
+  content: "Лежак";
+
+  left: -20px;
+}
+
+.cards__features-item--claw:hover::before {
+  content: "Когтеточка";
+
+  left: 0px;
+}
+
+.cards__features-item--play-complex:hover::before {
+  content: "Игровой комплекс";
+
+  left: -32px;
+
+  width: 125px;
+}
+
+.cards__features-item--house:hover::before {
+  content: "Домик";
+
+  left: 60px;
+}
+
+/* Хвост у подсказки */
+
+/* .cards__features-item::after {
+  content: "";
+
+  position: absolute;
+  left: 4px;
+  top: -26px;
+
+  width: 13px;
+  height: 13px;
+
+  background-color: #FFFEFD;
+  box-shadow: 0px 4px 12px rgba(173, 152, 143, 0.18);
+  border: 1px solid #FAC663;
+
+  /* transform: rotate(45deg); */
+  /* z-index: 1;
+
+  clip-path: polygon(100% 0, 50% 100%, 0 0); */
+/* }  */
+
+/* promotion */
+
+.promo {
+  box-sizing: border-box;
+  width: 290px;
+  height: 496px;
+  padding: 60px 25px;
+  margin: 70px auto;
+
+  text-align: center;
+
+  background-color: #F3B55F;
+  background-image: url(../img/promotion.jpg);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.promo h2 {
+  margin: 5px auto;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.promo span {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 37px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.promo p {
+  margin-top: 5px;
+  margin-bottom: 23px;
+}
+
+.promo__link {
+  margin: auto;
 }
