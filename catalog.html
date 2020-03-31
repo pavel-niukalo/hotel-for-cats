@@ -79,12 +79,12 @@
         <h2 class="visually-hidden">Фильтры и сортировка</h2>
         <button class="filters__open" type="button" aria-label="Открыть фильтры">Фильтры</button>
 
-        <div class="filters__wrapper">
+        <div class="filters__form-wrapper">
           <button class="filters__close close" type="button" aria-label="Закрыть фильтры"></button>
 
           <form class="filters__form form">
             <fieldset class="form__price">
-              <legend>Цена за сутки, &#8381;</legend>
+              <legend>Цена за сутки, </legend>
               <input class="form__input" name="priceMin" type="text" placeholder="от 100">
               <input class="form__input" name="priceMax" type="text" placeholder="до 600">
             </fieldset>
@@ -157,12 +157,19 @@
           </form>
         </div>
 
-        <select class="filters__sort">
+        <!-- <div class="filters__sort select">
+            <div class="select__item select__item--up select__item--current">По площади</div>
+            <div class="select__item select__item--down">По площади</div>
+            <div class="select__item select__item--up">По цене</div>
+            <div class="select__item select__item--down">По цене</div>
+          </div>
+        </div> -->
+        <!-- <select class="filters__sort">
           <option class="increas-square" value="increas-square" selected>По площади</option>
           <option class="reduce-square" value="reduce-square">По площади</option>
           <option class="increas-price" value="increas-price">По цене</option>
           <option class="reduce-price" value="reduce-price">По цене</option>
-        </select>
+        </select> -->
       </section>
 
       <section class="cards">
@@ -180,7 +187,7 @@
                   <span class="cards__features-item cards__features-item--empty" aria-label="Пустой номер"></span>
                 </div>
               </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">100&#8381;</span></li>
+              <li class="cards__list-item">Цена за сутки: <span class="cards__price">100</span></li>
             </ul>
 
             <a class="cards__link orange-button" href="booking.html">Забронировать</a>
@@ -201,7 +208,7 @@
                   <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
                 </div>
                 </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">200&#8381;</span></li>
+              <li class="cards__list-item">Цена за сутки: <span class="cards__price">200</span></li>
             </ul>
 
             <a class="cards__link orange-button" href="booking.html">Забронировать</a>
@@ -223,7 +230,7 @@
                   <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
                 </div>
               </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">250&#8381;</span></li>
+              <li class="cards__list-item">Цена за сутки: <span class="cards__price">250</span></li>
             </ul>
 
             <a class="cards__link orange-button" href="booking.html">Забронировать</a>
@@ -245,7 +252,7 @@
                   <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
                 </div>
               </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">350&#8381;</span></li>
+              <li class="cards__list-item">Цена за сутки: <span class="cards__price">350</span></li>
             </ul>
 
             <a class="cards__link orange-button" href="booking.html">Забронировать</a>
@@ -268,7 +275,7 @@
                   <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
                 </div>
               </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">500&#8381;</span></li>
+              <li class="cards__list-item">Цена за сутки: <span class="cards__price">500</span></li>
             </ul>
 
             <a class="cards__link orange-button" href="booking.html">Забронировать</a>
@@ -291,7 +298,7 @@
                   <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
                 </div>
               </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">600&#8381;</span></li>
+              <li class="cards__list-item">Цена за сутки: <span class="cards__price">600</span></li>
             </ul>
 
             <a class="cards__link orange-button" href="booking.html">Забронировать</a>
@@ -396,6 +403,7 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/sort.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU"></script>
     <script src="js/map.js"></script>
   </body>
