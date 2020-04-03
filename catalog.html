@@ -160,11 +160,17 @@
         <div class="filters__sort select">
           <button type="button" class="select__current"><span class="select__pointer-up"></span>По площади</button>
 
+          <span class="select__selector">
+            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L7 7L13 1" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+
           <div class="select__body">
-            <button type="button" class="select__item"><span class="select__pointer-up"></span>По площади</button>
-            <button type="button" class="select__item"><span class="select__pointer-down"></span>По площади</button>
-            <button type="button" class="select__item"><span class="select__pointer-up"></span>По цене</button>
-            <button type="button" class="select__item"><span class="select__pointer-down"></span>По цене</button>
+            <button type="button" class="select__item select__item--square-up"><span class="select__pointer-up"></span>По площади</button>
+            <button type="button" class="select__item select__item--square-down"><span class="select__pointer-down"></span>По площади</button>
+            <button type="button" class="select__item select__item--price-up"><span class="select__pointer-up"></span>По цене</button>
+            <button type="button" class="select__item select__item--price-down"><span class="select__pointer-down"></span>По цене</button>
           </div>
         </div>
       </section>
@@ -400,7 +406,7 @@
     </footer>
 
     <script src="js/menu.js"></script>
-    <script src="js/sort.js"></script>
+    <script src="js/sort&filters.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU"></script>
     <script src="js/map.js"></script>
   </body>
