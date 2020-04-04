@@ -944,6 +944,7 @@ a {
 
 .filters__form-wrapper--opened {
   position: absolute;
+  left: 50%;
   top: 102px;
 
   display: block;
@@ -951,7 +952,7 @@ a {
   width: 290px;
   padding-top: 47px;
   padding-left: 25px;
-  margin: 0 auto;
+  margin-left: -145px;
 
   background-color: #FFFEFD;
   box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
@@ -962,11 +963,33 @@ a {
 
 .filters__close {
   position: absolute;
-  right: 15px;
-  top: 10px;
+  right: 19px;
+  top: 19px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+}
+
+.filters__close:hover path,
+.filters__close:focus path {
+  stroke: #FF7236;
+  transition: 0.3s linear;
+}
+
+.filters__close:active path {
+  opacity: 0.5;
 }
 
 /* form */
+
+.form {
+  margin-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 17px;
+}
 
 .form fieldset,
 .form legend {
@@ -979,6 +1002,10 @@ a {
 .form legend {
   font-size: 16px;
   line-height: 19px;
+}
+
+.form .form__price {
+  margin-bottom: 16px;
 }
 
 .form__price legend {
@@ -1002,11 +1029,10 @@ a {
 .form__input {
   width: 79px;
   padding: 9px 10px 8px 8px;
-  margin-right: 11px;
-  margin-bottom: 26px;
+  margin-right: 12px;
+  margin-bottom: 10px;
 
-  font-size: 14px;
-  line-height: 17px;
+  font: inherit;
 
   border: 1px solid #E1E1E1;
 }
@@ -1020,7 +1046,8 @@ a {
   color: #1A212F;
 }
 
-.form__square {
+.form__square,
+.form__features {
   display: flex;
   flex-direction: column;
 }
@@ -1029,15 +1056,89 @@ a {
   margin-bottom: 16px;
 }
 
+.form .form__square {
+  margin-bottom: 12px;
+}
+
+.form__features legend {
+  margin-bottom: 16px;
+}
+
+.form .form__features {
+  margin-bottom: 21px;
+}
+
+.form__button {
+  box-sizing: border-box;
+  width: 240px;
+  padding: 10px 50px 11px 50px;
+  margin-bottom: 15px;
+
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+
+  border: 2px solid #FAC663;
+  border-radius: 25px;
+
+  transition: 0.3s linear;
+}
+
+.form__submit {
+  background-color: #FAC663;
+}
+
+.form__reset {
+  background-color: #FFFEFD;
+}
+
+.form__submit:disabled:hover {
+  color: rgb(97, 97, 97);
+
+  background-color: #FAC663;
+  border: 2px solid #FAC663;
+}
+
+.form__reset:disabled:hover {
+  color: rgb(97, 97, 97);
+
+  background-color: #FFFEFD;
+  border: 2px solid #FAC663;
+}
+
+.form__submit:hover,
+.form__submit:focus,
+.form__reset:hover,
+.form__reset:focus {
+  color: #FFFEFD;
+
+  background-color: #FF7236;
+  border: 2px solid #FF7236;
+
+  cursor: pointer;
+}
+
+.form__submit:active,
+.form__reset:active {
+  opacity: 0.5;
+}
+
 /* checkbox */
 
 .checkbox {
   position: relative;
 
+  width: 130px;
   padding-left: 35px;
+  margin-bottom: 18px;
 
   font-size: 14px;
   line-height: 17px;
+}
+
+.checkbox--features {
+  line-height: 26px;
+  margin-bottom: 13px;
 }
 
 .checkbox:hover {
