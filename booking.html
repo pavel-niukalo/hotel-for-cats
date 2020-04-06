@@ -13,153 +13,208 @@
       <a class="page-header__logo" href="index.html"></a>
 
       <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__open" type="button" aria-label="Открыть меню"></button>
-        <button class="main-nav__close close" type="button" aria-label="Закрыть меню"></button>
+        <button class="main-nav__open" type="button" aria-label="Открыть меню">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1H23M1 8H23M1 15H23" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="main-nav__close" type="button" aria-label="Закрыть меню">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L15 15M15 1L1 15" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Номера</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html#Reviews">Отзывы</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#Contacts">Контакты</a>
-          </li>
-        </ul>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Номера</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html#Reviews">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#Contacts">Контакты</a>
+            </li>
+          </ul>
 
-        <p class="main-nav__phone">8 (800) 333-55-99</p>
-        <ul class="main-nav__social social">
-          <li>
-            <a class="social__link" href="#" aria-label="facebook"></a>
-          </li>
-          <li>
-            <a class="social__link" href="#" aria-label="instagram"></a>
-          </li>
-          <li>
-            <a class="social__link" href="#" aria-label="vk"></a>
-          </li>
-        </ul>
+          <a class="main-nav__phone" href="tel:+78003335599">8 (800) 333-55-99</a>
+          <ul class="main-nav__social social">
+            <li>
+              <a class="social__link" href="#" aria-label="facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#FFFDFB"/>
+                  <path d="M24 12C24 5.3736 18.6264 0 12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C12.0705 24 12.1406 23.9985 12.2109 23.9973V14.6558H9.63281V11.6512H12.2109V9.44019C12.2109 6.87598 13.7763 5.48035 16.0637 5.48035C17.159 5.48035 18.1005 5.56201 18.375 5.59845V8.27838H16.7977C15.5533 8.27838 15.3124 8.86981 15.3124 9.73755V11.6512H18.2878L17.9 14.6558H15.3124V23.5364C20.3282 22.0984 24 17.4774 24 12Z" fill="#1A212F"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#" aria-label="instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#FFFDFB"/>
+                  <path d="M14.2969 12C14.2969 13.2686 13.2686 14.2969 12 14.2969C10.7314 14.2969 9.70312 13.2686 9.70312 12C9.70312 10.7314 10.7314 9.70312 12 9.70312C13.2686 9.70312 14.2969 10.7314 14.2969 12Z" fill="#1A212F"/>
+                  <path d="M17.3716 7.93622C17.2612 7.63702 17.085 7.36621 16.8561 7.14392C16.6339 6.91504 16.3632 6.73889 16.0638 6.62848C15.821 6.53418 15.4563 6.42194 14.7845 6.39136C14.0577 6.35822 13.8398 6.35107 12 6.35107C10.16 6.35107 9.94208 6.35803 9.21552 6.39117C8.5437 6.42194 8.17877 6.53418 7.93616 6.62848C7.63678 6.73889 7.36597 6.91504 7.14386 7.14392C6.91498 7.36621 6.73883 7.63684 6.62823 7.93622C6.53394 8.17902 6.42169 8.54395 6.39111 9.21576C6.35797 9.94232 6.35083 10.1602 6.35083 12.0002C6.35083 13.8401 6.35797 14.058 6.39111 14.7847C6.42169 15.4565 6.53394 15.8213 6.62823 16.0641C6.73883 16.3635 6.91479 16.6341 7.14368 16.8564C7.36597 17.0853 7.6366 17.2614 7.93597 17.3718C8.17877 17.4663 8.5437 17.5786 9.21552 17.6091C9.94208 17.6423 10.1598 17.6492 11.9998 17.6492C13.84 17.6492 14.0579 17.6423 14.7843 17.6091C15.4561 17.5786 15.821 17.4663 16.0638 17.3718C16.6648 17.14 17.1398 16.665 17.3716 16.0641C17.4659 15.8213 17.5781 15.4565 17.6089 14.7847C17.642 14.058 17.649 13.8401 17.649 12.0002C17.649 10.1602 17.642 9.94232 17.6089 9.21576C17.5783 8.54395 17.4661 8.17902 17.3716 7.93622ZM12 15.5384C10.0457 15.5384 8.46149 13.9543 8.46149 12.0001C8.46149 10.0458 10.0457 8.46173 12 8.46173C13.9541 8.46173 15.5383 10.0458 15.5383 12.0001C15.5383 13.9543 13.9541 15.5384 12 15.5384ZM15.6782 9.14874C15.2216 9.14874 14.8513 8.7785 14.8513 8.32184C14.8513 7.86517 15.2216 7.49493 15.6782 7.49493C16.1349 7.49493 16.5051 7.86517 16.5051 8.32184C16.5049 8.7785 16.1349 9.14874 15.6782 9.14874Z" fill="#1A212F"/>
+                  <path d="M12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C18.6264 24 24 18.6264 24 12C24 5.3736 18.6264 0 12 0ZM18.8491 14.8409C18.8157 15.5744 18.6991 16.0752 18.5288 16.5135C18.1708 17.4391 17.4391 18.1708 16.5135 18.5288C16.0754 18.6991 15.5744 18.8156 14.8411 18.8491C14.1063 18.8826 13.8715 18.8906 12.0002 18.8906C10.1287 18.8906 9.8941 18.8826 9.15912 18.8491C8.42578 18.8156 7.9248 18.6991 7.48663 18.5288C7.02667 18.3558 6.61029 18.0846 6.26605 17.7339C5.91559 17.3899 5.64441 16.9733 5.47137 16.5135C5.30109 16.0754 5.18445 15.5744 5.15112 14.8411C5.11725 14.1061 5.10938 13.8713 5.10938 12C5.10938 10.1287 5.11725 9.89392 5.15094 9.15912C5.18427 8.4256 5.30072 7.9248 5.47101 7.48645C5.64404 7.02667 5.91541 6.61011 6.26605 6.26605C6.61011 5.91541 7.02667 5.64423 7.48645 5.47119C7.9248 5.3009 8.4256 5.18445 9.15912 5.15094C9.89392 5.11743 10.1287 5.10938 12 5.10938C13.8713 5.10938 14.1061 5.11743 14.8409 5.15112C15.5744 5.18445 16.0752 5.3009 16.5135 5.47101C16.9733 5.64404 17.3899 5.91541 17.7341 6.26605C18.0846 6.61029 18.356 7.02667 18.5288 7.48645C18.6993 7.9248 18.8157 8.4256 18.8492 9.15912C18.8828 9.89392 18.8906 10.1287 18.8906 12C18.8906 13.8713 18.8828 14.1061 18.8491 14.8409Z" fill="#1A212F"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link social__link--vk" href="#" aria-label="vk">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#1A212F"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5468 17.263H12.4886C12.4886 17.263 12.7731 17.2317 12.9184 17.0752C13.0521 16.9314 13.0478 16.6615 13.0478 16.6615C13.0478 16.6615 13.0294 15.3977 13.6159 15.2116C14.1941 15.0282 14.9366 16.433 15.7236 16.9731C16.3187 17.3819 16.7709 17.2923 16.7709 17.2923L18.8752 17.263C18.8752 17.263 19.976 17.1952 19.454 16.3297C19.4112 16.2589 19.15 15.6894 17.8895 14.5193C16.5701 13.2947 16.7467 13.4928 18.3361 11.3744C19.3041 10.0843 19.691 9.2967 19.5702 8.95936C19.4549 8.63807 18.743 8.72299 18.743 8.72299L16.3737 8.73775C16.3737 8.73775 16.1981 8.71379 16.0678 8.79166C15.9405 8.86802 15.8586 9.046 15.8586 9.046C15.8586 9.046 15.4836 10.0443 14.9835 10.8933C13.9285 12.6848 13.5066 12.7794 13.3342 12.6682C12.9331 12.4089 13.0332 11.6266 13.0332 11.0709C13.0332 9.33478 13.2966 8.6109 12.5205 8.42352C12.263 8.36127 12.0734 8.3202 11.4148 8.31357C10.5694 8.3048 9.85388 8.31613 9.44873 8.51464C9.17921 8.64663 8.97128 8.94075 9.09792 8.95765C9.2545 8.97862 9.60917 9.05327 9.7972 9.30932C10.04 9.6396 10.0314 10.3814 10.0314 10.3814C10.0314 10.3814 10.1709 12.4252 9.70564 12.6791C9.38627 12.8532 8.94818 12.4977 8.00761 10.8724C7.52567 10.0398 7.16181 9.11958 7.16181 9.11958C7.16181 9.11958 7.09164 8.9476 6.96651 8.85562C6.81463 8.74417 6.60243 8.70866 6.60243 8.70866L4.35101 8.72342C4.35101 8.72342 4.01303 8.73283 3.88896 8.87979C3.77858 9.01049 3.88019 9.28087 3.88019 9.28087C3.88019 9.28087 5.64282 13.4047 7.63862 15.4828C9.46863 17.3881 11.5468 17.263 11.5468 17.263Z" fill="#FFFDFB"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="checkRoom">
         <div class="checkRoom__gallery gallery">
-          <img src="" class="gallery__checkImg" width="290" height="288" alt="Белая китса играет">
-          <img src="" class="gallery__img" width="86" height="64" alt="Милый котенок">
-          <img src="" class="gallery__img" width="86" height="64" alt="Еще милый котенок">
-          <img src="" class="gallery__img" width="86" height="64" alt="Вдумчивая китса">
+          <img src="img/cat-eleven.jpg" class="gallery__checkImg" width="290" height="288" alt="Белая китса играет">
+          <div class="gallery__mini">
+            <img src="img/cat-eight.jpg" class="gallery__img" width="86" height="64" alt="Милый котенок">
+            <img src="img/cat-nine.jpg" class="gallery__img" width="86" height="64" alt="Еще милый котенок">
+            <img src="img/cat-ten.jpg" class="gallery__img" width="86" height="64" alt="Вдумчивая китса">
+          </div>
         </div>
 
         <div class="checkRoom__description">
           <h2 class="checkRoom__heading">Супер-Люкс</h2>
           <ul class="checkRoom__list">
-            <li class="checkRoom__item">Размеры (ШхГхВ) - 180х160х180х см</li>
+            <li class="checkRoom__item">Размеры (ШхГхВ) - 180х160х180 см</li>
             <li class="checkRoom__item">Площадь - 2,88 м<sup>2</sup></li>
-            <li class="checkRoom__item">Оснащение номера
-              <ul>
-                <li>Лежак</li>
-                <li>Домик</li>
-                <li>Игровой комплекс - 3 яруса</li>
-                <li>Когтеточка</li>
+            <li class="checkRoom__item checkRoom__item--features">Оснащение номера
+              <ul class="checkRoom__features">
+                <li class="checkRoom__features-item checkRoom__features-item--lying">Лежак</li>
+                <li class="checkRoom__features-item checkRoom__features-item--house">Домик</li>
+                <li class="checkRoom__features-item checkRoom__features-item--play-complex">Игровой комплекс - 3 яруса</li>
+                <li class="checkRoom__features-item checkRoom__features-item--claw">Когтеточка</li>
               </ul>
             </li>
-            <li class="checkRoom__item">Цена за сутки: 600₽</li>
+            <li class="checkRoom__item">Цена за сутки: <span class="checkRoom__price">600</span></li>
           </ul>
 
-          <a class="checkRoom__link button" href="booking-nojs.html">Забронировать</a>
+          <a class="checkRoom__link orange-button" href="booking-nojs.html">Забронировать</a>
         </div>
       </section>
 
-      <section id="Rooms" class="rooms">
-        <h2 class="rooms__heading">Другие номера</h2>
-        <div class="rooms__item rooms__item--one">
-          <img src="" class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
-          <h2 class="rooms__item-heading">Эконом плюс</h2>
-          <ul class="rooms__list">
-            <li class="rooms__list-item">Площадь - 0,90 м<sup>2</sup></li>
-            <li class="rooms__list-item">Размеры (ШхГхВ)<br>90х100х180х см</li>
-            <li class="rooms__list-item">Цена за сутки: 200₽</li>
-          </ul>
-          <a class="rooms__link button" href="catalog.html#economyPlus">Забронировать</a>
-        </div>
+      <section id="Rooms" class="rooms rooms--booking">
+        <h2 class="rooms__heading rooms__heading--booking">Другие номера</h2>
+        <div class="rooms__wrapper container">
+          <div class="rooms__item rooms__item--one">
+            <img src="img/cat-seven.jpg" class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
+            <div class="room__description">
+              <h2 class="rooms__item-heading">Эконом плюс</h2>
+              <ul class="rooms__list">
+                <li class="rooms__list-item">Площадь - 0,90 м<sup>2</sup></li>
+                <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">90х100х180 см</span></li>
+                <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">200</span></li>
+              </ul>
+              <a class="rooms__link orange-button" href="#">Забронировать</a>
+            </div>
+          </div>
 
-        <div class="rooms__item rooms__item--two">
-          <img src="" class="rooms__picture" width="290" height="192" alt="Серая китса на когтеточке">
-          <h2 class="rooms__item-heading">Комфорт</h2>
-          <ul class="rooms__list">
-            <li class="rooms__list-item">Площадь - 1,13 м<sup>2</sup></li>
-            <li class="rooms__list-item">Размеры (ШхГхВ)<br>100х125х250х см</li>
-            <li class="rooms__list-item">Цена за сутки: 250₽</li>
-          </ul>
-          <a class="rooms__link button" href="catalog.html#comfort">Забронировать</a>
-        </div>
+          <div class="rooms__item rooms__item--two">
+            <img src="img/cat-three.jpg" class="rooms__picture" width="290" height="192" alt="Серая китса на когтеточке">
+            <div class="room__description">
+              <h2 class="rooms__item-heading">Комфорт</h2>
+              <ul class="rooms__list">
+                <li class="rooms__list-item">Площадь - 1,13 м<sup>2</sup></li>
+                <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">100х125х250 см</span></li>
+                <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">250</span></li>
+              </ul>
+              <a class="rooms__link orange-button" href="#">Забронировать</a>
+            </div>
+          </div>
 
-        <div class="rooms__item rooms__item--three">
-          <img src="" class="rooms__picture" width="290" height="192" alt="Китса в корзинке у окна">
-          <h2 class="rooms__item-heading">Сьют</h2>
-          <ul class="rooms__list">
-            <li class="rooms__list-item">Площадь - 1,56 м<sup>2</sup></li>
-            <li class="rooms__list-item">Размеры (ШхГхВ)<br>125х125х180х см</li>
-            <li class="rooms__list-item">Цена за сутки: 350₽</li>
-          </ul>
-          <a class="rooms__link button" href="catalog.html#sue">Забронировать</a>
-        </div>
+          <div class="rooms__item rooms__item--three">
+            <img src="img/cat-four.jpg" class="rooms__picture" width="290" height="192" alt="Китса в корзинке у окна">
+            <div class="room__description">
+              <h2 class="rooms__item-heading">Сьют</h2>
+              <ul class="rooms__list">
+                <li class="rooms__list-item">Площадь - 1,56 м<sup>2</sup></li>
+                <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">125х125х180 см</span></li>
+                <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">350</span></li>
+              </ul>
+              <a class="rooms__link orange-button" href="#">Забронировать</a>
+            </div>
+          </div>
 
-        <div class="rooms__slider slider">
-          <button class="slider__toogle slider__toogle--one" type="button"></button>
-          <button class="slider__toogle slider__toogle--two" type="button"></button>
-          <button class="slider__toogle slider__toogle--three" type="button"></button>
+          <div class="rooms__slider slider">
+            <button class="slider__toogle slider__toogle--one slider__toogle--active" type="button"></button>
+            <button class="slider__toogle slider__toogle--two" type="button"></button>
+            <button class="slider__toogle slider__toogle--three" type="button"></button>
+          </div>
         </div>
       </section>
 
       <section id="Contacts" class="contacts">
-        <h2 class="contacts__heading">Как нас найти</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <b>Адрес</b>
-            <p>Санкт-Петербург, ул Большая Конюшенная, д 19</p>
-          </li>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__heading section-heading">Как нас найти</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <b>Адрес</b>
+              <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323055%2C59.938631&z=16">Санкт-Петербург,<br>ул Большая Конюшенная, д 19</a>
+            </li>
 
-          <li class="contacts__item">
-            <b>Режим работы</b>
-            <p>Ежедневно, с 9:00 до 20:00</p>
-          </li>
+            <li class="contacts__item">
+              <b>Режим работы</b>
+              <p>Ежедневно, с 9:00 до 20:00</p>
+            </li>
 
-          <li class="contacts__item">
-            <b>Телефон</b>
-            <p>8 (800) 333-55-99</p>
-          </li>
+            <li class="contacts__item">
+              <b>Телефон</b>
+              <a href="tel:+78003335599">8 (800) 333-55-99</a>
+            </li>
 
-          <li class="contacts__item">
-            <b>E-mail</b>
-            <p>info@cat-hotel.ru</p>
-          </li>
+            <li class="contacts__item">
+              <b>E-mail</b>
+              <a href="info@cat-hotel.ru">info@cat-hotel.ru</a>
+            </li>
 
-          <li class="contacts__item">
-            <b>Социальные сети</b>
-            <ul class="contacts__social social">
-              <li>
-                <a class="social__link" href="#" aria-label="facebook"></a>
-              </li>
-              <li>
-                <a class="social__link" href="#" aria-label="instagram"></a>
-              </li>
-              <li>
-                <a class="social__link" href="#" aria-label="vk"></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <li class="contacts__item">
+              <b>Социальные сети</b>
+              <ul class="contacts__social social">
+                <li>
+                  <a class="social__link" href="#" aria-label="facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#FFFDFB"/>
+                      <path d="M24 12C24 5.3736 18.6264 0 12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C12.0705 24 12.1406 23.9985 12.2109 23.9973V14.6558H9.63281V11.6512H12.2109V9.44019C12.2109 6.87598 13.7763 5.48035 16.0637 5.48035C17.159 5.48035 18.1005 5.56201 18.375 5.59845V8.27838H16.7977C15.5533 8.27838 15.3124 8.86981 15.3124 9.73755V11.6512H18.2878L17.9 14.6558H15.3124V23.5364C20.3282 22.0984 24 17.4774 24 12Z" fill="#1A212F"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="#" aria-label="instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#FFFDFB"/>
+                      <path d="M14.2969 12C14.2969 13.2686 13.2686 14.2969 12 14.2969C10.7314 14.2969 9.70312 13.2686 9.70312 12C9.70312 10.7314 10.7314 9.70312 12 9.70312C13.2686 9.70312 14.2969 10.7314 14.2969 12Z" fill="#1A212F"/>
+                      <path d="M17.3716 7.93622C17.2612 7.63702 17.085 7.36621 16.8561 7.14392C16.6339 6.91504 16.3632 6.73889 16.0638 6.62848C15.821 6.53418 15.4563 6.42194 14.7845 6.39136C14.0577 6.35822 13.8398 6.35107 12 6.35107C10.16 6.35107 9.94208 6.35803 9.21552 6.39117C8.5437 6.42194 8.17877 6.53418 7.93616 6.62848C7.63678 6.73889 7.36597 6.91504 7.14386 7.14392C6.91498 7.36621 6.73883 7.63684 6.62823 7.93622C6.53394 8.17902 6.42169 8.54395 6.39111 9.21576C6.35797 9.94232 6.35083 10.1602 6.35083 12.0002C6.35083 13.8401 6.35797 14.058 6.39111 14.7847C6.42169 15.4565 6.53394 15.8213 6.62823 16.0641C6.73883 16.3635 6.91479 16.6341 7.14368 16.8564C7.36597 17.0853 7.6366 17.2614 7.93597 17.3718C8.17877 17.4663 8.5437 17.5786 9.21552 17.6091C9.94208 17.6423 10.1598 17.6492 11.9998 17.6492C13.84 17.6492 14.0579 17.6423 14.7843 17.6091C15.4561 17.5786 15.821 17.4663 16.0638 17.3718C16.6648 17.14 17.1398 16.665 17.3716 16.0641C17.4659 15.8213 17.5781 15.4565 17.6089 14.7847C17.642 14.058 17.649 13.8401 17.649 12.0002C17.649 10.1602 17.642 9.94232 17.6089 9.21576C17.5783 8.54395 17.4661 8.17902 17.3716 7.93622ZM12 15.5384C10.0457 15.5384 8.46149 13.9543 8.46149 12.0001C8.46149 10.0458 10.0457 8.46173 12 8.46173C13.9541 8.46173 15.5383 10.0458 15.5383 12.0001C15.5383 13.9543 13.9541 15.5384 12 15.5384ZM15.6782 9.14874C15.2216 9.14874 14.8513 8.7785 14.8513 8.32184C14.8513 7.86517 15.2216 7.49493 15.6782 7.49493C16.1349 7.49493 16.5051 7.86517 16.5051 8.32184C16.5049 8.7785 16.1349 9.14874 15.6782 9.14874Z" fill="#1A212F"/>
+                      <path d="M12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C18.6264 24 24 18.6264 24 12C24 5.3736 18.6264 0 12 0ZM18.8491 14.8409C18.8157 15.5744 18.6991 16.0752 18.5288 16.5135C18.1708 17.4391 17.4391 18.1708 16.5135 18.5288C16.0754 18.6991 15.5744 18.8156 14.8411 18.8491C14.1063 18.8826 13.8715 18.8906 12.0002 18.8906C10.1287 18.8906 9.8941 18.8826 9.15912 18.8491C8.42578 18.8156 7.9248 18.6991 7.48663 18.5288C7.02667 18.3558 6.61029 18.0846 6.26605 17.7339C5.91559 17.3899 5.64441 16.9733 5.47137 16.5135C5.30109 16.0754 5.18445 15.5744 5.15112 14.8411C5.11725 14.1061 5.10938 13.8713 5.10938 12C5.10938 10.1287 5.11725 9.89392 5.15094 9.15912C5.18427 8.4256 5.30072 7.9248 5.47101 7.48645C5.64404 7.02667 5.91541 6.61011 6.26605 6.26605C6.61011 5.91541 7.02667 5.64423 7.48645 5.47119C7.9248 5.3009 8.4256 5.18445 9.15912 5.15094C9.89392 5.11743 10.1287 5.10938 12 5.10938C13.8713 5.10938 14.1061 5.11743 14.8409 5.15112C15.5744 5.18445 16.0752 5.3009 16.5135 5.47101C16.9733 5.64404 17.3899 5.91541 17.7341 6.26605C18.0846 6.61029 18.356 7.02667 18.5288 7.48645C18.6993 7.9248 18.8157 8.4256 18.8492 9.15912C18.8828 9.89392 18.8906 10.1287 18.8906 12C18.8906 13.8713 18.8828 14.1061 18.8491 14.8409Z" fill="#1A212F"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link social__link--vk" href="#" aria-label="vk">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="12" fill="#1A212F"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5468 17.263H12.4886C12.4886 17.263 12.7731 17.2317 12.9184 17.0752C13.0521 16.9314 13.0478 16.6615 13.0478 16.6615C13.0478 16.6615 13.0294 15.3977 13.6159 15.2116C14.1941 15.0282 14.9366 16.433 15.7236 16.9731C16.3187 17.3819 16.7709 17.2923 16.7709 17.2923L18.8752 17.263C18.8752 17.263 19.976 17.1952 19.454 16.3297C19.4112 16.2589 19.15 15.6894 17.8895 14.5193C16.5701 13.2947 16.7467 13.4928 18.3361 11.3744C19.3041 10.0843 19.691 9.2967 19.5702 8.95936C19.4549 8.63807 18.743 8.72299 18.743 8.72299L16.3737 8.73775C16.3737 8.73775 16.1981 8.71379 16.0678 8.79166C15.9405 8.86802 15.8586 9.046 15.8586 9.046C15.8586 9.046 15.4836 10.0443 14.9835 10.8933C13.9285 12.6848 13.5066 12.7794 13.3342 12.6682C12.9331 12.4089 13.0332 11.6266 13.0332 11.0709C13.0332 9.33478 13.2966 8.6109 12.5205 8.42352C12.263 8.36127 12.0734 8.3202 11.4148 8.31357C10.5694 8.3048 9.85388 8.31613 9.44873 8.51464C9.17921 8.64663 8.97128 8.94075 9.09792 8.95765C9.2545 8.97862 9.60917 9.05327 9.7972 9.30932C10.04 9.6396 10.0314 10.3814 10.0314 10.3814C10.0314 10.3814 10.1709 12.4252 9.70564 12.6791C9.38627 12.8532 8.94818 12.4977 8.00761 10.8724C7.52567 10.0398 7.16181 9.11958 7.16181 9.11958C7.16181 9.11958 7.09164 8.9476 6.96651 8.85562C6.81463 8.74417 6.60243 8.70866 6.60243 8.70866L4.35101 8.72342C4.35101 8.72342 4.01303 8.73283 3.88896 8.87979C3.77858 9.01049 3.88019 9.28087 3.88019 9.28087C3.88019 9.28087 5.64282 13.4047 7.63862 15.4828C9.46863 17.3881 11.5468 17.263 11.5468 17.263Z" fill="#FFFDFB"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="map">
+      <section id="ymap" class="map">
         <h2 class="visually-hidden">Месторасположение на карте</h2>
-        <div id="ymap"></div>
       </section>
     </main>
 
@@ -172,13 +227,13 @@
             <a class="footer__link" href="index.html#WhyWe">Почему мы?</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#Rooms">Номера</a>
-          </li>
-          <li class="footer__item">
             <a class="footer__link" href="index.html#Reviews">Отзывы</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#Contacts"></a>Контакты</a>
+            <a class="footer__link" href="#Rooms">Номера</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Contacts">Как нас найти</a>
           </li>
         </ul>
       </nav>
@@ -222,6 +277,9 @@
       </div>
     </template>
 
+    <script src="js/menu.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU"></script>
+    <script src="js/map.js"></script>
   </body>
 
 </html>

@@ -22,10 +22,10 @@
         // Своё изображение иконки метки.
         iconImageHref: 'img/mappin.svg',
         // Размеры метки.
-        iconImageSize: [100, 100],
+        iconImageSize: [80, 80],
         // Смещение левого верхнего угла иконки относительно
         // её 'ножки' (точки привязки).
-        iconImageOffset: [-45, -65]
+        iconImageOffset: [-47, -50]
       });
     myMap.geoObjects.add(myPlacemark);
     myMap.options.set('scrollZoomSpeed', 3);

@@ -38,6 +38,10 @@
   src: url("../fonts/latobold.woff2") format("woff2"), url("../fonts/latobold.woff") format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -530,8 +534,21 @@ a {
   z-index: -1;
 }
 
+.rooms--booking::before {
+  top: 122px;
+}
+
 .rooms__heading {
   margin-bottom: 32px;
+}
+
+.rooms__heading--booking {
+  width: 110px;
+  margin: 3px auto 33px auto;
+
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
 }
 
 .rooms__item {
@@ -854,6 +871,17 @@ a {
   line-height: 19px;
   font-weight: 600;
   color: #1A212F;
+
+  transition: 0.3s linear;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: #FAC663;
+}
+
+.footer__link:active {
+  opacity: 0.5;
 }
 
 /* copyright */
@@ -1590,3 +1618,128 @@ a {
   margin: auto;
 }
 
+/* booking.html */
+
+.checkRoom {
+  padding-top: 102px;
+}
+
+.checkRoom__gallery,
+.checkRoom__description {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.checkRoom__heading {
+  margin-bottom: 19px;
+
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.checkRoom__list,
+.checkRoom__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkRoom__list {
+  margin-bottom: 25px;
+}
+
+.checkRoom__features {
+  margin-bottom: 18px;
+}
+
+.checkRoom__item {
+  margin-bottom: 5px;
+}
+
+.checkRoom__item--features {
+  margin-top: 10px;
+}
+
+.checkRoom__features-item {
+  width: 230px;
+  padding-left: 29px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-position: left;
+  background-repeat: no-repeat;
+
+  transition: 0.3s linear;
+}
+
+.checkRoom__features-item--lying {
+  background-image: url(../img/lying.svg);
+}
+
+.checkRoom__features-item--claw {
+  background-image: url(../img/claw.svg);
+}
+
+.checkRoom__features-item--play-complex {
+  background-image: url(../img/play-complex.svg);
+}
+
+.checkRoom__features-item--house {
+  background-image: url(../img/house.svg);
+}
+
+.checkRoom__price {
+  display: inline-block;
+  margin-left: 9px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.checkRoom__price::after {
+  content: "";
+
+  display: inline-block;
+  width: 10px;
+  height: 13px;
+  margin-left: 1px;
+
+  background-image: url(../img/ruble.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkRoom__link {
+  padding: 14px 86px 15px 76px;
+
+  background-position: 247px;
+}
+
+/* gallery */
+
+.gallery__checkImg {
+  margin-bottom: 11px;
+}
+
+.gallery__mini {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 290px;
+  margin-bottom: 33px;
+}
+
+.gallery__img {
+  opacity: 0.5;
+
+  transition: 0.3s linear;
+}
+
+.gallery__img:hover,
+.gallery__img:focus {
+  opacity: 1;
+}

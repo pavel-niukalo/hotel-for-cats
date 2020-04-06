@@ -16,7 +16,7 @@
   var background = document.createElement('div');
 
   var openFilter = function () {
-    background.style = 'position: absolute; width: 100vw; height: 4608px; background: rgba(255, 254, 253, 0.8); backdrop-filter: blur(8px); z-index: 15';
+    background.style = 'position: absolute; width: 100vw; height: 4750px; margin-top: -150px; background: rgba(255, 254, 253, 0.8); backdrop-filter: blur(8px); z-index: 15';
     document.body.insertAdjacentElement('afterbegin', background);
 
     filters.classList.add('filters__form-wrapper--opened');
@@ -27,7 +27,6 @@
   };
 
   var closeFilter = function () {
-    window.scrollTo(0, 0);
     background.remove();
 
     filters.classList.remove('filters__form-wrapper--opened');
@@ -66,6 +65,7 @@
     formSubmit.disabled = true;
     // Здесь идет отправка на сервер и после успешной отправки закрываются фильтры
     closeFilter();
+    window.scrollTo(0, 0);
   });
 
   background.addEventListener('click', function() {
@@ -87,9 +87,9 @@
   select.addEventListener('click', function() {
     select.classList.toggle('select--opened');
     if (select.classList.contains('select--opened')) {
-      select.style = 'border-radius: 4px;'
+      select.style = 'border-radius: 4px;';
     } else {
-      select.style = 'border-radius: 25px;'
+      select.style = 'border-radius: 25px;';
     }
   });
 
