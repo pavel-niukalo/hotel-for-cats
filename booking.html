@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <div class="background__page"></div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html"></a>
 
@@ -100,7 +101,7 @@
             <li class="checkRoom__item">Цена за сутки: <span class="checkRoom__price">600</span></li>
           </ul>
 
-          <a class="checkRoom__link orange-button" href="booking-nojs.html">Забронировать</a>
+          <a class="checkRoom__link orange-button booking__link" href="booking-nojs.html">Забронировать</a>
         </div>
       </section>
 
@@ -116,7 +117,7 @@
                 <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">90х100х180 см</span></li>
                 <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">200</span></li>
               </ul>
-              <a class="rooms__link orange-button" href="#">Забронировать</a>
+              <a class="rooms__link orange-button booking__link" href="booking-nojs.html">Забронировать</a>
             </div>
           </div>
 
@@ -129,7 +130,7 @@
                 <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">100х125х250 см</span></li>
                 <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">250</span></li>
               </ul>
-              <a class="rooms__link orange-button" href="#">Забронировать</a>
+              <a class="rooms__link orange-button booking__link" href="booking-nojs.html">Забронировать</a>
             </div>
           </div>
 
@@ -142,7 +143,7 @@
                 <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">125х125х180 см</span></li>
                 <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">350</span></li>
               </ul>
-              <a class="rooms__link orange-button" href="#">Забронировать</a>
+              <a class="rooms__link orange-button booking__link" href="booking-nojs.html">Забронировать</a>
             </div>
           </div>
 
@@ -277,9 +278,12 @@
       </div>
     </template>
 
+    <script src="js/util.js"></script>
+    <script src="js/success.js"></script>
     <script src="js/menu.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU"></script>
     <script src="js/map.js"></script>
+    <script src="js/booking.js"></script>
   </body>
 
 </html>

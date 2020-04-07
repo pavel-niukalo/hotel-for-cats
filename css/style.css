@@ -81,6 +81,19 @@ a {
   margin: 0 auto;
 }
 
+.background__page--isActive {
+  position: absolute;
+
+  width: 100vw;
+  height: 5000px;
+  margin-top: -250px;
+
+  background: rgba(255, 254, 253, 0.8);
+  backdrop-filter: blur(8px);
+
+  z-index: 15
+}
+
 .section-heading {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 28px;
@@ -1626,8 +1639,9 @@ a {
 
 .checkRoom__gallery,
 .checkRoom__description {
-  padding-left: 15px;
-  padding-right: 15px;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
