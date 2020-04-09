@@ -247,24 +247,29 @@
 
     <template id="booking">
       <article class="booking">
-        <button class="booking__close close" type="button" aria-label="Закрыть окно бронирования"></button>
-        <h2 class="booking__heading">Забронировать номера</h2>
+        <button class="booking__close close" type="button" aria-label="Закрыть окно бронирования">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L15 15M15 1L1 15" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <h2 class="booking__heading">Забронировать номер</h2>
 
         <form class="booking__form">
-          <input class="booking__input" type="text" placeholder="Ваше имя">
-          <input class="booking__input" type="text" placeholder="Имя Питомца">
-          <input class="booking__input" type="tel" placeholder="Телефон">
-          <input class="booking__input" type="email" placeholder="E-mail">
+          <input class="booking__input" type="text" placeholder="Ваше имя" required>
+          <input class="booking__input" type="text" placeholder="Имя Питомца" required>
+          <input class="booking__input" type="tel" placeholder="Телефон" required>
+          <input class="booking__input" type="email" placeholder="E-mail" required>
 
           <fieldset class="booking__date">
+            <legend>Дата заезда</legend>
             <label class="booking__label" for="dateArrival">с</label>
-            <input id="dateArrival" class="booking__input booking__input--date" type="date" placeholder="26.01.2020">
+            <input id="dateArrival" class="booking__input booking__input--date" type="text" placeholder="26.01.2020" required>
 
             <label class="booking__label" for="dateDeparture">по</label>
-            <input id="dateDeparture" class="booking__input booking__input--date" type="date" placeholder="26.02.2020">
+            <input id="dateDeparture" class="booking__input booking__input--date" type="text" placeholder="26.02.2020" required>
           </fieldset>
 
-          <button class="booking__submit button" type="submit">Отправить заявку</button>
+          <button class="booking__submit orange-button" type="submit">Отправить заявку</button>
         </form>
       </article>
     </template>
