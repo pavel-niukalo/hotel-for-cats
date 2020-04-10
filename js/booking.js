@@ -44,7 +44,7 @@
     .addEventListener('submit', function (evt) {
       evt.preventDefault();
 
-      closeBooking();
+      booking.remove();
 
       window.success.showMessage();
     })

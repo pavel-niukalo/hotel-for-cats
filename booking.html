@@ -255,7 +255,7 @@
         <h2 class="booking__heading">Забронировать номер</h2>
 
         <form class="booking__form">
-          <input class="booking__input" type="text" placeholder="Ваше имя" required>
+          <input class="booking__input" type="text" placeholder="Ваше имя" required minlength="2" maxlength="30">
           <input class="booking__input" type="text" placeholder="Имя Питомца" required>
           <input class="booking__input" type="tel" placeholder="Телефон" required>
           <input class="booking__input" type="email" placeholder="E-mail" required>
@@ -276,10 +276,14 @@
 
     <template id="success">
       <div class="success">
-        <button class="success__close close" type="button" aria-label="Закрыть"></button>
+        <button class="success__close close" type="button" aria-label="Закрыть">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L15 15M15 1L1 15" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
         <h2 class="success__heading">Спасибо за заявку!</h2>
         <p class="success__text">Мы свяжемся с вами в ближайшее время</p>
-        <button class="success__button button" type="button">Ок</button>
+        <button class="success__button orange-button" type="button">Ок</button>
       </div>
     </template>
 

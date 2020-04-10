@@ -5,6 +5,8 @@
     .content
     .querySelector('.success');
 
+  var background = document.querySelector('.background__page');
+
   var showMessage = function () {
     var success = templateSuccess.cloneNode(true);
 
@@ -13,12 +15,24 @@
     };
 
     var closeSuccess = function () {
+      background.classList.remove('background__page--isActive');
+
       success.remove();
       document.removeEventListener('keydown', onSuccessEscPress);
     };
 
     document.querySelector('main')
     .append(success);
+
+    success.querySelector('.success__close')
+    .addEventListener('click', function () {
+      closeSuccess();
+    });
+
+    success.querySelector('.success__button')
+    .addEventListener('click', function () {
+      closeSuccess();
+    });
 
     document.addEventListener('keydown', onSuccessEscPress);
 
