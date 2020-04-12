@@ -77,11 +77,11 @@
     <main>
       <section class="checkRoom">
         <div class="checkRoom__gallery gallery">
-          <img src="img/cat-eleven.jpg" class="gallery__checkImg" width="290" height="288" alt="Белая китса играет">
+          <img src="img/cat-eleven-mobile@1x.jpg" class="gallery__checkImg" width="290" height="288" alt="Белая китса играет">
           <div class="gallery__mini">
-            <img src="img/cat-eight.jpg" class="gallery__img" width="86" height="64" alt="Милый котенок">
-            <img src="img/cat-nine.jpg" class="gallery__img" width="86" height="64" alt="Еще милый котенок">
-            <img src="img/cat-ten.jpg" class="gallery__img" width="86" height="64" alt="Вдумчивая китса">
+            <img src="img/cat-eight-mobile@1x.jpg" class="gallery__img" width="86" height="64" alt="Милый котенок">
+            <img src="img/cat-nine-mobile@1x.jpg" class="gallery__img" width="86" height="64" alt="Еще милый котенок">
+            <img src="img/cat-ten-mobile@1x.jpg" class="gallery__img" width="86" height="64" alt="Вдумчивая китса">
           </div>
         </div>
 
@@ -109,7 +109,15 @@
         <h2 class="rooms__heading rooms__heading--booking">Другие номера</h2>
         <div class="rooms__wrapper container">
           <div class="rooms__item rooms__item--one">
-            <img src="img/cat-seven.jpg" class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-seven-desktop@2x.webp 2x, img/cat-seven-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-seven-tablet@2x.webp 2x, img/cat-seven-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-seven-mobile@2x.webp 2x, img/cat-seven-mobile@1x.webp 1x"> -->
+
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-seven-desktop@2x.jpg 2x, img/cat-seven-desktop@1x.jpg 1x"> -->
+              <!-- <source media="(min-width: 660px)" srcset="img/cat-seven-tablet@2x.jpg 2x, img/cat-seven-tablet@1x.jpg 1x"> -->
+              <img src="img/cat-seven-mobile@1x.jpg" srcset="img/cat-seven-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
+            </picture>
             <div class="room__description">
               <h2 class="rooms__item-heading">Эконом плюс</h2>
               <ul class="rooms__list">
@@ -122,7 +130,15 @@
           </div>
 
           <div class="rooms__item rooms__item--two">
-            <img src="img/cat-three.jpg" class="rooms__picture" width="290" height="192" alt="Серая китса на когтеточке">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-three-mobile@2x.webp 2x, img/cat-three-mobile@1x.webp 1x"> -->
+
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.jpg 2x, img/cat-three-desktop@1x.jpg 1x"> -->
+              <!-- <source media="(min-width: 660px)" srcset="img/cat-three-tablet@2x.jpg 2x, img/cat-three-tablet@1x.jpg 1x"> -->
+              <img src="img/cat-three-mobile@1x.jpg" srcset="img/cat-three-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Серая китса на когтеточке">
+            </picture>
             <div class="room__description">
               <h2 class="rooms__item-heading">Комфорт</h2>
               <ul class="rooms__list">
@@ -135,7 +151,15 @@
           </div>
 
           <div class="rooms__item rooms__item--three">
-            <img src="img/cat-four.jpg" class="rooms__picture" width="290" height="192" alt="Китса в корзинке у окна">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-four-mobile@2x.webp 2x, img/cat-four-mobile@1x.webp 1x"> -->
+
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.jpg 2x, img/cat-four-desktop@1x.jpg 1x"> -->
+              <!-- <source media="(min-width: 660px)" srcset="img/cat-four-tablet@2x.jpg 2x, img/cat-four-tablet@1x.jpg 1x"> -->
+              <img src="img/cat-four-mobile@1x.jpg" srcset="img/cat-four-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Китса в корзинке у окна">
+            </picture>
             <div class="room__description">
               <h2 class="rooms__item-heading">Сьют</h2>
               <ul class="rooms__list">
@@ -293,6 +317,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU"></script>
     <script src="js/map.js"></script>
     <script src="js/booking.js"></script>
+    <script src="js/image.js"></script>
   </body>
 
 </html>
