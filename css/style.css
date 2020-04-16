@@ -1399,6 +1399,7 @@ a {
 
 .cards__description {
   padding: 20px 24px 24px 24px;
+  margin-top: -5px;
 
   background-color: #FFFFFF;
   border: 1px solid #E1E1E1;
