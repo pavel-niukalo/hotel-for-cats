@@ -439,8 +439,9 @@ a {
 }
 
 .features__item {
-  width: 235px;
-  padding: 92px 30px 21px 25px;
+  box-sizing: border-box;
+  width: 290px;
+  padding: 92px 30px 20px 26px;
   margin-bottom: 30px;
 
   text-align: left;
@@ -455,49 +456,44 @@ a {
 }
 
 .features__item:hover,
-.rooms__item:hover,
-.cards__item:hover,
-.reviews__item:hover {
+.cards__item:hover {
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
 
   transform: translateY(-5px);
 }
 
 .features__item--temperature {
-  padding-bottom: 20px;
   background-image: url("../img/temperature.svg");
 }
 
 .features__item--video {
-  width: 240px;
   padding-right: 25px;
+  padding-bottom: 21px;
 
   background-image: url("../img/video.svg");
 }
 
 .features__item--taxi {
-  width: 240px;
-  padding-right: 25px;
+  padding-bottom: 21px;
 
   background-image: url("../img/taxi.svg");
 }
 
 .features__item--food {
-  width: 255px;
   padding-right: 10px;
-  padding-bottom: 20px;
 
   background-image: url("../img/food.svg");
 }
 
 .features__item--walk {
-  width: 250px;
-  padding-right: 15px;
+  padding-right: 14px;
+  padding-bottom: 21px;
 
   background-image: url("../img/walk.svg");
 }
 
 .features__item--medcine {
+  padding-right: 50px;
   background-image: url("../img/medcine.svg");
 }
 
@@ -511,28 +507,11 @@ a {
 }
 
 .features__description {
-  width: 220px;
   margin: 0;
-}
-
-.features__description--video {
-  width: 240px;
-}
-
-.features__description--taxi {
-  width: 235px;
 }
 
 .features__description--food {
   width: 240px;
-}
-
-.features__description--walk {
-  width: 250px;
-}
-
-.features__description--medcine {
-  width: 215px;
 }
 
 /* rooms */
@@ -845,8 +824,8 @@ a {
   margin-right: 18px;
 }
 
-.contacts__item:hover a,
-.contacts__item:focus a {
+.contacts__item a:hover,
+.contacts__item a:focus {
   color: #FFFEFD;
 }
 
@@ -2117,20 +2096,12 @@ a {
   }
 
   .features::before {
-    content: "";
-
-    position: absolute;
     top: 19px;
-    right: 0;
 
     width: 254px;
     height: 283px;
 
     background-image: url("../img/pawbackground-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    z-index: -1;
   }
 
   .features__heading {
@@ -2144,59 +2115,42 @@ a {
   }
 
   .features__item {
-    width: 269px;
-    padding: 103px 30px 21px 25px;
-    margin-bottom: 30px;
-
-    text-align: left;
-
-    background-color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-position: 25px 25px;
-    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
-    border-radius: 8px;
-
-    transition: 0.3s linear;
+    width: 324px;
+    padding: 103px 31px 22px 25px;
+    margin-bottom: 29px;
   }
 
   .features__item--temperature {
-    padding-bottom: 21px;
     background-image: url("../img/temperature-tablet.svg");
   }
 
   .features__item--video {
-    width: 274px;
-    padding-right: 25px;
+    padding-right: 40px;
 
     background-image: url("../img/video-tablet.svg");
   }
 
   .features__item--taxi {
-    width: 274px;
-    padding-right: 25px;
-    padding-bottom: 84px;
+    padding-right: 63px;
+    padding-bottom: 85px;
 
     background-image: url("../img/taxi-tablet.svg");
   }
 
   .features__item--food {
-    width: 290px;
     padding-right: 10px;
-    padding-bottom: 20px;
+    margin-right: 1px;
 
     background-image: url("../img/food-tablet.svg");
   }
 
   .features__item--walk {
-    width: 284px;
-    padding-right: 15px;
     padding-bottom: 42px;
 
     background-image: url("../img/walk-tablet.svg");
   }
 
   .features__item--medcine {
-    width: 289px;
     padding-right: 10px;
     background-image: url("../img/medcine-tablet.svg");
   }
@@ -2208,28 +2162,82 @@ a {
     line-height: 28px;
   }
 
-  .features__description {
-    width: 260px;
-    margin: 0;
+  /* rooms */
+
+  .rooms::before {
+    top: 122px;
+
+    width: 340px;
+    height: 105px;
+
+    background-image: url("../img/fish-tablet.svg");
   }
 
-  .features__description--video {
-    width: 240px;
+  .rooms--booking::before {
+    top: 122px;
   }
 
-  .features__description--taxi {
-    width: 235px;
+  .rooms__heading {
+    margin-bottom: 51px;
   }
 
-  .features__description--food {
-    width: 240px;
+  .rooms__heading--booking {
+    width: 110px;
+    margin: 3px auto 33px auto;
+
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
   }
 
-  .features__description--walk {
-    width: 255px;
+  .rooms__wrapper {
+    max-width: 708px;
   }
 
-  .features__description--medcine {
-    width: 282px;
+  .rooms__item {
+    display: none;
+  }
+
+  .rooms__item--active {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rooms__picture {
+    width: 442px;
+    height: 326px;
+  }
+
+  .room__description {
+    padding: 35px 40px;
+    margin-top: 30px;
+    margin-left: -109px;
+    margin-bottom: 35px;
+
+    border-radius: 8px 8px 8px 8px;
+    z-index: 2;
+  }
+
+  .rooms__sizes {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .rooms__sizes::before {
+    content: "—";
+
+    margin-right: 2px;
+  }
+
+  .rooms__link {
+    padding: 14px 48px 15px 30px;
+    margin: 27px 1px 5px 0px;
+
+    background-position: 163px;
+  }
+
+  .rooms__slider {
+    margin: 45px auto;
   }
 }
