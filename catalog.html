@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Котейка. Номера гостиницы</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-base.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
+    <link rel="stylesheet" href="css/style-tablet.css">
+    <link rel="stylesheet" href="css/style-desktop.css">
   </head>
 
   <body>
@@ -46,7 +49,7 @@
         <div class="main-nav__list-wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html#WhyWe">Почему мы?</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#Rooms">Наши номера</a>
@@ -200,182 +203,184 @@
 
       <section class="cards">
         <h2 class="visually-hidden">Варианты номеров</h2>
-        <div class="cards__item">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-one-desktop@2x.webp 2x, img/cat-one-desktop@1x.webp 1x"> -->
-            <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-one-tablet@2x.webp 2x, img/cat-one-tablet@1x.webp 1x"> -->
-            <!-- <source type="image/webp" srcset="img/cat-one-mobile@2x.webp 2x, img/cat-one-mobile@1x.webp 1x"> -->
+        <div class="cards__wrapper container">
+          <div class="cards__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-one-desktop@2x.webp 2x, img/cat-one-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-one-tablet@2x.webp 2x, img/cat-one-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-one-mobile@2x.webp 2x, img/cat-one-mobile@1x.webp 1x"> -->
 
-            <!-- <source media="(min-width: 960px)" srcset="img/cat-one-desktop@2x.jpg 2x, img/cat-one-desktop@1x.jpg 1x"> -->
-            <!-- <source media="(min-width: 660px)" srcset="img/cat-one-tablet@2x.jpg 2x, img/cat-one-tablet@1x.jpg 1x"> -->
-            <img src="img/cat-one-mobile@1x.jpg" srcset="img/cat-one-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Серая котейка на лежанке">
-          </picture>
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-one-desktop@2x.jpg 2x, img/cat-one-desktop@1x.jpg 1x"> -->
+              <source media="(min-width: 768px)" srcset="img/cat-one-tablet@2x.jpg 2x, img/cat-one-tablet@1x.jpg 1x">
+              <img src="img/cat-one-mobile@1x.jpg" srcset="img/cat-one-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Серая котейка на лежанке">
+            </picture>
 
-          <div class="cards__description">
-            <h3 class="cards__heading">Эконом</h3>
-            <ul class="cards__list">
-              <li class="cards__list-item">Размеры (ШхГхВ) - 90х70х180 см</li>
-              <li class="cards__list-item">Площадь - 0,63 м<sup>2</sup></li>
-              <li class="cards__list-item">Оснащение номера
-                <div class="cards__features">
-                  <span class="cards__features-item cards__features-item--empty" aria-label="Пустой номер"></span>
-                </div>
-              </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">100</span></li>
-            </ul>
-
-            <a class="cards__link orange-button" href="booking.html">Забронировать</a>
-          </div>
-        </div>
-
-        <div id="economyPlus" class="cards__item">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-two-desktop@2x.webp 2x, img/cat-two-desktop@1x.webp 1x"> -->
-            <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-two-tablet@2x.webp 2x, img/cat-two-tablet@1x.webp 1x"> -->
-            <!-- <source type="image/webp" srcset="img/cat-two-mobile@2x.webp 2x, img/cat-two-mobile@1x.webp 1x"> -->
-
-            <!-- <source media="(min-width: 960px)" srcset="img/cat-two-desktop@2x.jpg 2x, img/cat-two-desktop@1x.jpg 1x"> -->
-            <!-- <source media="(min-width: 660px)" srcset="img/cat-two-tablet@2x.jpg 2x, img/cat-two-tablet@1x.jpg 1x"> -->
-            <img src="img/cat-two-mobile@1x.jpg" srcset="img/cat-two-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Богатка на когтеточке">
-          </picture>
-
-          <div class="cards__description">
-            <h3 class="cards__heading">Эконом плюс</h3>
-            <ul class="cards__list">
-              <li class="cards__list-item">Размеры (ШхГхВ) - 90х100х180 см</li>
-              <li class="cards__list-item">Площадь - 0,90 м<sup>2</sup></li>
-              <li class="cards__list-item">Оснащение номера
-                <div class="cards__features">
-                  <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                  <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                </div>
+            <div class="cards__description">
+              <h3 class="cards__heading">Эконом</h3>
+              <ul class="cards__list">
+                <li class="cards__list-item">Размеры (ШхГхВ) - 90х70х180 см</li>
+                <li class="cards__list-item">Площадь - 0,63 м<sup>2</sup></li>
+                <li class="cards__list-item">Оснащение номера
+                  <div class="cards__features">
+                    <span class="cards__features-item cards__features-item--empty" aria-label="Пустой номер"></span>
+                  </div>
                 </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">200</span></li>
-            </ul>
+                <li class="cards__list-item">Цена за сутки: <span class="cards__price">100</span></li>
+              </ul>
 
-            <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+            </div>
           </div>
-        </div>
 
-        <div id="comfort" class="cards__item">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x"> -->
-            <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x"> -->
-            <!-- <source type="image/webp" srcset="img/cat-three-mobile@2x.webp 2x, img/cat-three-mobile@1x.webp 1x"> -->
+          <div id="economyPlus" class="cards__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-two-desktop@2x.webp 2x, img/cat-two-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-two-tablet@2x.webp 2x, img/cat-two-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-two-mobile@2x.webp 2x, img/cat-two-mobile@1x.webp 1x"> -->
 
-            <!-- <source media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.jpg 2x, img/cat-three-desktop@1x.jpg 1x"> -->
-            <!-- <source media="(min-width: 660px)" srcset="img/cat-three-tablet@2x.jpg 2x, img/cat-three-tablet@1x.jpg 1x"> -->
-            <img src="img/cat-three-mobile@1x.jpg" srcset="img/cat-three-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Британка на когтеточке">
-          </picture>
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-two-desktop@2x.jpg 2x, img/cat-two-desktop@1x.jpg 1x"> -->
+              <source media="(min-width: 768px)" srcset="img/cat-two-tablet@2x.jpg 2x, img/cat-two-tablet@1x.jpg 1x">
+              <img src="img/cat-two-mobile@1x.jpg" srcset="img/cat-two-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Богатка на когтеточке">
+            </picture>
 
-          <div class="cards__description">
-            <h3 class="cards__heading">Комфорт</h3>
-            <ul class="cards__list">
-              <li class="cards__list-item">Размеры (ШхГхВ) - 100х125х180 см</li>
-              <li class="cards__list-item">Площадь - 1,13 м<sup>2</sup></li>
-              <li class="cards__list-item">Оснащение номера
-                <div class="cards__features">
-                  <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                  <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                  <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                </div>
-              </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">250</span></li>
-            </ul>
+            <div class="cards__description">
+              <h3 class="cards__heading">Эконом плюс</h3>
+              <ul class="cards__list">
+                <li class="cards__list-item">Размеры (ШхГхВ) - 90х100х180 см</li>
+                <li class="cards__list-item">Площадь - 0,90 м<sup>2</sup></li>
+                <li class="cards__list-item">Оснащение номера
+                  <div class="cards__features">
+                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                  </div>
+                  </li>
+                <li class="cards__list-item">Цена за сутки: <span class="cards__price">200</span></li>
+              </ul>
 
-            <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+            </div>
           </div>
-        </div>
 
-        <div id="sue" class="cards__item">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x"> -->
-            <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x"> -->
-            <!-- <source type="image/webp" srcset="img/cat-four-mobile@2x.webp 2x, img/cat-four-mobile@1x.webp 1x"> -->
+          <div id="comfort" class="cards__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-three-mobile@2x.webp 2x, img/cat-three-mobile@1x.webp 1x"> -->
 
-            <!-- <source media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.jpg 2x, img/cat-four-desktop@1x.jpg 1x"> -->
-            <!-- <source media="(min-width: 660px)" srcset="img/cat-four-tablet@2x.jpg 2x, img/cat-four-tablet@1x.jpg 1x"> -->
-            <img src="img/cat-four-mobile@1x.jpg" srcset="img/cat-four-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Китса в корзинке у окна">
-          </picture>
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.jpg 2x, img/cat-three-desktop@1x.jpg 1x"> -->
+              <source media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.jpg 2x, img/cat-three-tablet@1x.jpg 1x">
+              <img src="img/cat-three-mobile@1x.jpg" srcset="img/cat-three-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Британка на когтеточке">
+            </picture>
 
-          <div class="cards__description">
-            <h3 class="cards__heading">Сьют</h3>
-            <ul class="cards__list">
-              <li class="cards__list-item">Размеры (ШхГхВ) - 125х125х180 см</li>
-              <li class="cards__list-item">Площадь - 1,56 м<sup>2</sup></li>
-              <li class="cards__list-item">Оснащение номера
-                <div class="cards__features">
-                  <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                  <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                  <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                </div>
-              </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">350</span></li>
-            </ul>
+            <div class="cards__description">
+              <h3 class="cards__heading">Комфорт</h3>
+              <ul class="cards__list">
+                <li class="cards__list-item">Размеры (ШхГхВ) - 100х125х180 см</li>
+                <li class="cards__list-item">Площадь - 1,13 м<sup>2</sup></li>
+                <li class="cards__list-item">Оснащение номера
+                  <div class="cards__features">
+                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                  </div>
+                </li>
+                <li class="cards__list-item">Цена за сутки: <span class="cards__price">250</span></li>
+              </ul>
 
-            <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards__item">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-five-desktop@2x.webp 2x, img/cat-five-desktop@1x.webp 1x"> -->
-            <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-five-tablet@2x.webp 2x, img/cat-five-tablet@1x.webp 1x"> -->
-            <!-- <source type="image/webp" srcset="img/cat-five-mobile@2x.webp 2x, img/cat-five-mobile@1x.webp 1x"> -->
+          <div id="sue" class="cards__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-four-mobile@2x.webp 2x, img/cat-four-mobile@1x.webp 1x"> -->
 
-            <!-- <source media="(min-width: 960px)" srcset="img/cat-five-desktop@2x.jpg 2x, img/cat-five-desktop@1x.jpg 1x"> -->
-            <!-- <source media="(min-width: 660px)" srcset="img/cat-five-tablet@2x.jpg 2x, img/cat-five-tablet@1x.jpg 1x"> -->
-            <img src="img/cat-five-mobile@1x.jpg" srcset="img/cat-five-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Рыжая киса в лежаке">
-          </picture>
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.jpg 2x, img/cat-four-desktop@1x.jpg 1x"> -->
+              <source media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.jpg 2x, img/cat-four-tablet@1x.jpg 1x">
+              <img src="img/cat-four-mobile@1x.jpg" srcset="img/cat-four-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Китса в корзинке у окна">
+            </picture>
 
-          <div class="cards__description">
-            <h3 class="cards__heading">Люкс</h3>
-            <ul class="cards__list">
-              <li class="cards__list-item">Размеры (ШхГхВ) - 160х160х180 см</li>
-              <li class="cards__list-item">Площадь - 2,56 м<sup>2</sup></li>
-              <li class="cards__list-item">Оснащение номера
-                <div class="cards__features">
-                  <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                  <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                  <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                  <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
-                </div>
-              </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">500</span></li>
-            </ul>
+            <div class="cards__description">
+              <h3 class="cards__heading">Сьют</h3>
+              <ul class="cards__list">
+                <li class="cards__list-item">Размеры (ШхГхВ) - 125х125х180 см</li>
+                <li class="cards__list-item">Площадь - 1,56 м<sup>2</sup></li>
+                <li class="cards__list-item">Оснащение номера
+                  <div class="cards__features">
+                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                  </div>
+                </li>
+                <li class="cards__list-item">Цена за сутки: <span class="cards__price">350</span></li>
+              </ul>
 
-            <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards__item">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-six-desktop@2x.webp 2x, img/cat-six-desktop@1x.webp 1x"> -->
-            <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-six-tablet@2x.webp 2x, img/cat-six-tablet@1x.webp 1x"> -->
-            <!-- <source type="image/webp" srcset="img/cat-six-mobile@2x.webp 2x, img/cat-six-mobile@1x.webp 1x"> -->
+          <div class="cards__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-five-desktop@2x.webp 2x, img/cat-five-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-five-tablet@2x.webp 2x, img/cat-five-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-five-mobile@2x.webp 2x, img/cat-five-mobile@1x.webp 1x"> -->
 
-            <!-- <source media="(min-width: 960px)" srcset="img/cat-six-desktop@2x.jpg 2x, img/cat-six-desktop@1x.jpg 1x"> -->
-            <!-- <source media="(min-width: 660px)" srcset="img/cat-six-tablet@2x.jpg 2x, img/cat-six-tablet@1x.jpg 1x"> -->
-            <img src="img/cat-six-mobile@1x.jpg" srcset="img/cat-six-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Белая китса играет">
-          </picture>
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-five-desktop@2x.jpg 2x, img/cat-five-desktop@1x.jpg 1x"> -->
+              <source media="(min-width: 768px)" srcset="img/cat-five-tablet@2x.jpg 2x, img/cat-five-tablet@1x.jpg 1x">
+              <img src="img/cat-five-mobile@1x.jpg" srcset="img/cat-five-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Рыжая киса в лежаке">
+            </picture>
 
-          <div class="cards__description">
-            <h3 class="cards__heading">Супер-Люкс</h3>
-            <ul class="cards__list">
-              <li class="cards__list-item">Размеры (ШхГхВ) - 180х160х180 см</li>
-              <li class="cards__list-item">Площадь - 2,88 м<sup>2</sup></li>
-              <li class="cards__list-item">Оснащение номера
-                <div class="cards__features">
-                  <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                  <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                  <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                  <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
-                </div>
-              </li>
-              <li class="cards__list-item">Цена за сутки: <span class="cards__price">600</span></li>
-            </ul>
+            <div class="cards__description">
+              <h3 class="cards__heading">Люкс</h3>
+              <ul class="cards__list">
+                <li class="cards__list-item">Размеры (ШхГхВ) - 160х160х180 см</li>
+                <li class="cards__list-item">Площадь - 2,56 м<sup>2</sup></li>
+                <li class="cards__list-item">Оснащение номера
+                  <div class="cards__features">
+                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                    <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
+                  </div>
+                </li>
+                <li class="cards__list-item">Цена за сутки: <span class="cards__price">500</span></li>
+              </ul>
 
-            <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+            </div>
+          </div>
+
+          <div class="cards__item">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-six-desktop@2x.webp 2x, img/cat-six-desktop@1x.webp 1x"> -->
+              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-six-tablet@2x.webp 2x, img/cat-six-tablet@1x.webp 1x"> -->
+              <!-- <source type="image/webp" srcset="img/cat-six-mobile@2x.webp 2x, img/cat-six-mobile@1x.webp 1x"> -->
+
+              <!-- <source media="(min-width: 960px)" srcset="img/cat-six-desktop@2x.jpg 2x, img/cat-six-desktop@1x.jpg 1x"> -->
+              <source media="(min-width: 768px)" srcset="img/cat-six-tablet@2x.jpg 2x, img/cat-six-tablet@1x.jpg 1x">
+              <img src="img/cat-six-mobile@1x.jpg" srcset="img/cat-six-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Белая китса играет">
+            </picture>
+
+            <div class="cards__description">
+              <h3 class="cards__heading">Супер-Люкс</h3>
+              <ul class="cards__list">
+                <li class="cards__list-item">Размеры (ШхГхВ) - 180х160х180 см</li>
+                <li class="cards__list-item">Площадь - 2,88 м<sup>2</sup></li>
+                <li class="cards__list-item">Оснащение номера
+                  <div class="cards__features">
+                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                    <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
+                  </div>
+                </li>
+                <li class="cards__list-item">Цена за сутки: <span class="cards__price">600</span></li>
+              </ul>
+
+              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+            </div>
           </div>
         </div>
       </section>
@@ -443,15 +448,15 @@
             </li>
           </ul>
         </div>
-      </section>
 
-      <section id="ymap" class="map">
-        <h2 class="visually-hidden">Месторасположение на карте</h2>
+        <div id="ymap" class="contacts__map">
+          <h2 class="visually-hidden">Месторасположение на карте</h2>
+        </div>
       </section>
     </main>
 
     <footer>
-      <a class="footer__logo">
+      <a class="footer__logo" href="index.html">
         <svg viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.76782 35.4295C5.70896 34.7191 5.2852 34.0206 4.11987 33.9614C4.8379 33.8667 5.82667 32.2091 5.40291 30.9778C5.04978 29.9832 3.99039 30.374 3.36652 30.5634C3.24881 31.5106 3.51955 33.251 2.47192 33.4759C2.42484 32.9787 2.51901 32.1499 2.38952 31.2856C2.14233 29.853 0.400216 30.516 0 30.6936C0.153024 32.2801 0.129482 32.7064 0.129482 34.6126C0.141253 35.2637 0.0706263 36.2938 0.129482 36.8503C0.294276 38.3302 2.04816 37.9395 2.53078 37.4304C2.53078 36.8029 2.51901 35.5242 2.48369 34.8138C3.26058 34.7546 3.40183 34.9796 3.42538 36.6371C3.43715 38.2947 5.39114 37.9869 5.96793 37.4186C5.76782 36.8029 5.82667 36.0215 5.76782 35.4295Z" fill="#1A212F"/>
           <path d="M6.78905 34.21C6.78905 37.6435 8.55471 37.9277 9.79067 37.8921C10.9325 37.8921 12.8041 37.5725 12.8158 34.21C12.8041 31.333 11.5328 30.3148 9.82598 30.3148C8.02501 30.3148 6.78905 31.4277 6.78905 34.21ZM9.82598 32.2446C9.95546 32.2446 10.4498 32.0552 10.4498 34.1271C10.4498 35.4769 10.238 36.2464 9.81421 36.2464C9.46108 36.2464 9.17857 35.9268 9.21389 34.1271C9.21389 32.4933 9.62587 32.2446 9.82598 32.2446Z" fill="#1A212F"/>
@@ -474,10 +479,10 @@
       <nav class="footer__nav">
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#WhyWe">Почему мы?</a>
+            <a class="footer__link" href="index.html#WhyWe">Почему мы?</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#Reviews">Отзывы</a>
+            <a class="footer__link" href="index.html#Reviews">Отзывы</a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="#Rooms">Номера</a>
