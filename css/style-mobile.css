@@ -16,10 +16,14 @@
   height: 39px;
   margin: 11px auto 12px 15px;
 
-  background-image: url("../img/logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  transition: 0.3s linear;
 }
+
+.page-header__logo[href]:hover,
+.page-header__logo[href]:focus {
+  opacity: 0.5;
+}
+
 
 .page-header--opened {
   height: 100vh;
@@ -421,6 +425,10 @@
   background-position: center;
 
   z-index: -1;
+}
+
+.rooms--booking {
+  padding-top: 70px;
 }
 
 .rooms--booking::before {
@@ -1461,28 +1469,6 @@ footer {
   left: 60px;
 }
 
-/* Хвост у подсказки */
-
-/* .cards__features-item::after {
-  content: "";
-
-  position: absolute;
-  left: 4px;
-  top: -26px;
-
-  width: 13px;
-  height: 13px;
-
-  background-color: #FFFEFD;
-  box-shadow: 0px 4px 12px rgba(173, 152, 143, 0.18);
-  border: 1px solid #FAC663;
-
-  /* transform: rotate(45deg); */
-  /* z-index: 1;
-
-  clip-path: polygon(100% 0, 50% 100%, 0 0); */
-/* }  */
-
 /* promotion */
 
 .promo {
@@ -1552,12 +1538,13 @@ footer {
 
 /* booking.html */
 
+/* checkRoom */
+
 .checkRoom {
   padding-top: 102px;
 }
 
-.checkRoom__gallery,
-.checkRoom__description {
+.checkRoom__wrapper {
   box-sizing: border-box;
   width: 320px;
   padding: 0 15px;
@@ -1667,7 +1654,7 @@ footer {
   justify-content: space-between;
 
   width: 290px;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 }
 
 .gallery__img {
@@ -1683,6 +1670,8 @@ footer {
 .gallery__img:hover,
 .gallery__img:focus {
   opacity: 1;
+
+  cursor: pointer;
 }
 
 /* booking */
@@ -1718,6 +1707,8 @@ footer {
 
   background-color: transparent;
   border: 0;
+
+  cursor: pointer;
 }
 
 .booking__close:hover path,
@@ -1879,8 +1870,7 @@ footer {
 }
 
 .success__text {
-  width: 160px;
-  padding-left: 15px;
+  width: 152px;
   margin: 0 auto;
 
   font-size: 16px;
