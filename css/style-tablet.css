@@ -11,10 +11,6 @@
     width: 63px;
     height: 52px;
     margin: 12px auto 12px 45px;
-
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   /* main-nav */
@@ -69,9 +65,6 @@
     padding-top: 210px;
     padding-bottom: 494px;
 
-    text-align: center;
-
-    background-color: #F3B55F;
     background-image: url("../img/background-tablet.svg"), url("../img/background-promo-block-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0px -150px, bottom;
@@ -109,11 +102,12 @@
 
   .features::before {
     top: 19px;
+    right: -81px;
 
-    width: 254px;
+    width: 293px;
     height: 283px;
 
-    background-image: url("../img/pawbackground-tablet.svg");
+    background-size: 372px 345px;
   }
 
   .features__heading {
@@ -130,41 +124,30 @@
     width: 324px;
     padding: 103px 31px 22px 25px;
     margin-bottom: 29px;
-  }
 
-  .features__item--temperature {
-    background-image: url("../img/temperature-tablet.svg");
+    background-size: 75px 75px;
   }
 
   .features__item--video {
     padding-right: 40px;
-
-    background-image: url("../img/video-tablet.svg");
   }
 
   .features__item--taxi {
     padding-right: 63px;
     padding-bottom: 85px;
-
-    background-image: url("../img/taxi-tablet.svg");
   }
 
   .features__item--food {
     padding-right: 10px;
     margin-right: 1px;
-
-    background-image: url("../img/food-tablet.svg");
   }
 
   .features__item--walk {
     padding-bottom: 42px;
-
-    background-image: url("../img/walk-tablet.svg");
   }
 
   .features__item--medcine {
     padding-right: 10px;
-    background-image: url("../img/medcine-tablet.svg");
   }
 
   .features__item-heading {

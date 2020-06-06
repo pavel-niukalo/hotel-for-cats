@@ -303,6 +303,8 @@
   position: relative;
 
   padding-top: 50px;
+
+  overflow-x: hidden;
 }
 
 .features::before {
@@ -310,9 +312,9 @@
 
   position: absolute;
   top: 56px;
-  right: 0;
+  right: -31px;
 
-  width: 100px;
+  width: 117px;
   height: 115px;
 
   background-image: url("../img/pawbackground.svg");
@@ -337,6 +339,7 @@
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: 25px 25px;
+  background-size: 60px 60px;
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
   border-radius: 8px;
 
