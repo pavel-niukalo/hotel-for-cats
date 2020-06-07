@@ -417,7 +417,7 @@
   content: "";
 
   position: absolute;
-  top: 83px;
+  top: 108px;
   left: 0px;
 
   width: 150px;
@@ -470,6 +470,10 @@
   flex-direction: column;
 
   transition: 0.3s linear;
+}
+
+.rooms__picture {
+  border-radius: 8px 8px 0px 0px;
 }
 
 .room__description {
@@ -568,11 +572,13 @@
   border-radius: 50%;
 
   transition: 0.3s linear;
+  outline: none;
 }
 
 .slider__toogle:hover,
 .slider__toogle:focus {
   background-color: #1A212F;
+  cursor: pointer;
 }
 
 .slider__toogle:active {
@@ -588,12 +594,18 @@
   opacity: 1;
 }
 
+.slider__button {
+  display: none;
+}
+
 /* reviews */
 .reviews {
   position: relative;
 
   padding-top: 50px;
   padding-bottom: 40px;
+
+  overflow-x: hidden;
 }
 
 .reviews::before {
@@ -601,7 +613,7 @@
 
   position: absolute;
   top: 56px;
-  right: 0;
+  right: -22px;
 
   width: 103px;
   height: 115px;
@@ -871,6 +883,7 @@ footer {
   border-radius: 25px;
 
   transition: 0.3s linear;
+  outline: none;
 }
 
 .filters__open:hover,
@@ -1149,7 +1162,9 @@ footer {
 
   border: none;
   border-radius: 25px;
+
   transition: 0.3s linear;
+  outline: none;
 }
 
 .select__current:hover,
@@ -1177,7 +1192,7 @@ footer {
 }
 
 .select--opened .select__current {
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
 }
 
 .select--opened .select__current:hover,
@@ -1218,7 +1233,6 @@ footer {
   background-color: #FFFFFF;
 
   border: none;
-  border-radius: 4px;
 
   transition: 0.3s linear;
 }

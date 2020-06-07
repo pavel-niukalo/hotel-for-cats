@@ -163,12 +163,12 @@
   }
 
   .rooms::before {
-    top: 124px;
+    top: 123px;
 
     width: 340px;
     height: 105px;
 
-    background-image: url("../img/fish-tablet.svg");
+    background-size: 340px 200px;
   }
 
   .rooms--booking {
@@ -208,6 +208,8 @@
   .rooms__picture {
     width: 442px;
     height: 326px;
+
+    border-radius: 10px;
   }
 
   .room__description {
@@ -247,17 +249,16 @@
   .reviews {
     padding-top: 36px;
     padding-bottom: 40px;
-
-    overflow-x: hidden;
   }
 
   .reviews::before {
-    top: 5px;
+    top: 4px;
+    right: -27px;
 
     width: 249px;
     height: 220px;
 
-    background-image: url("../img/pawbackgroundleft-tablet.svg");
+    background-size: 300px 290px;
   }
 
   .reviews__heading {
@@ -296,7 +297,7 @@
   .reviews__text::before {
     top: 5px;
 
-    background-image: url("../img/cite-tablet.svg");
+    background-size: 21px 24px;
   }
 
   .reviews__author,
@@ -319,7 +320,7 @@
   }
 
 
-/* contacts */
+  /* contacts */
 
   .contacts {
     display: flex;
@@ -338,7 +339,7 @@
   }
 
   .contacts__map {
-    min-width: 399px;
+    width: 50%;
     height: 551px;
     margin-top: -50px;
   }
