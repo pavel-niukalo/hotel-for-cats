@@ -96,94 +96,10 @@
     </header>
 
     <main>
-      <h1 id="Rooms" class="page-heading">Наши номера</h1>
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтры и сортировка</h2>
-        <button class="filters__open" type="button" aria-label="Открыть фильтры">Фильтры</button>
+      <div class="wrapper">
+        <h1 id="Rooms" class="page-heading">Наши номера</h1>
 
-        <div class="filters__form-wrapper">
-          <button class="filters__close close" type="button" aria-label="Закрыть фильтры">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L15 15M15 1L1 15" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-
-          <form class="filters__form form">
-            <fieldset class="form__price">
-              <legend>Цена за сутки, </legend>
-              <input class="form__input" name="priceMin" type="text" placeholder="от 100">
-              <input class="form__input" name="priceMax" type="text" placeholder="до 600">
-            </fieldset>
-
-            <fieldset class="form__square">
-              <legend>Площадь</legend>
-              <label class="form__checkbox checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                0,63 м<sup>2</sup>
-              </label>
-              <label class="form__checkbox checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                0,90 м<sup>2</sup>
-              </label>
-              <label class="form__checkbox checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                1,13 м<sup>2</sup>
-              </label>
-              <label class="form__checkbox checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                1,56 м<sup>2</sup>
-              </label>
-              <label class="form__checkbox checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                2,56 м<sup>2</sup>
-              </label>
-              <label class="form__checkbox checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                2,88 м<sup>2</sup>
-              </label>
-            </fieldset>
-
-            <fieldset class="form__features">
-              <legend>Оснащение номера</legend>
-              <label class="form__checkbox checkbox checkbox--features">
-                <input class="checkbox__input visually-hidden" name="emptyRoom" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                Пустой номер
-              </label>
-              <label class="form__checkbox checkbox checkbox--features">
-                <input class="checkbox__input visually-hidden" name="lying" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                Лежак
-              </label>
-              <label class="form__checkbox checkbox checkbox--features">
-                <input class="checkbox__input visually-hidden" name="claw" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                Когтеточка
-              </label>
-              <label class="form__checkbox checkbox checkbox--features">
-                <input class="checkbox__input visually-hidden" name="playComplex" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                Игровой комплекс
-              </label>
-              <label class="form__checkbox checkbox checkbox--features">
-                <input class="checkbox__input visually-hidden" name="house" type="checkbox" checked>
-                <span class="checkbox__icon"></span>
-                Домик
-              </label>
-            </fieldset>
-
-            <button class="form__button form__submit" type="submit">Подобрать</button>
-            <button class="form__button form__reset" type="reset">Сбросить фильтр</button>
-          </form>
-        </div>
-
-        <div class="filters__sort select">
+        <section class="select">
           <button type="button" class="select__current"><span class="select__pointer-up"></span>По площади</button>
 
           <span class="select__selector">
@@ -198,192 +114,280 @@
             <button type="button" class="select__item select__item--price-up"><span class="select__pointer-up"></span>По цене</button>
             <button type="button" class="select__item select__item--price-down"><span class="select__pointer-down"></span>По цене</button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="cards">
-        <h2 class="visually-hidden">Варианты номеров</h2>
-        <div class="cards__wrapper container">
-          <div class="cards__item">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-one-desktop@2x.webp 2x, img/cat-one-desktop@1x.webp 1x"> -->
-              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-one-tablet@2x.webp 2x, img/cat-one-tablet@1x.webp 1x"> -->
-              <!-- <source type="image/webp" srcset="img/cat-one-mobile@2x.webp 2x, img/cat-one-mobile@1x.webp 1x"> -->
+        <div class="catalog-wrapper">
+          <section class="filters">
+          <h2 class="visually-hidden">Фильтры и сортировка</h2>
+          <button class="filters__open" type="button" aria-label="Открыть фильтры">Фильтры</button>
 
-              <!-- <source media="(min-width: 960px)" srcset="img/cat-one-desktop@2x.jpg 2x, img/cat-one-desktop@1x.jpg 1x"> -->
-              <source media="(min-width: 768px)" srcset="img/cat-one-tablet@2x.jpg 2x, img/cat-one-tablet@1x.jpg 1x">
-              <img src="img/cat-one-mobile@1x.jpg" srcset="img/cat-one-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Серая котейка на лежанке">
-            </picture>
+          <div class="filters__form-wrapper">
+            <button class="filters__close close" type="button" aria-label="Закрыть фильтры">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 15M15 1L1 15" stroke="#1A212F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
 
-            <div class="cards__description">
-              <h3 class="cards__heading">Эконом</h3>
-              <ul class="cards__list">
-                <li class="cards__list-item">Размеры (ШхГхВ) - 90х70х180 см</li>
-                <li class="cards__list-item">Площадь - 0,63 м<sup>2</sup></li>
-                <li class="cards__list-item">Оснащение номера
-                  <div class="cards__features">
-                    <span class="cards__features-item cards__features-item--empty" aria-label="Пустой номер"></span>
-                  </div>
-                </li>
-                <li class="cards__list-item">Цена за сутки: <span class="cards__price">100</span></li>
-              </ul>
+            <form class="filters__form form">
+              <fieldset class="form__price">
+                <legend>Цена за сутки, </legend>
+                <input class="form__input" name="priceMin" type="text" placeholder="от 100">
+                <input class="form__input" name="priceMax" type="text" placeholder="до 600">
+              </fieldset>
 
-              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
-            </div>
+              <fieldset class="form__square">
+                <legend>Площадь</legend>
+                <label class="form__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  0,63 м<sup>2</sup>
+                </label>
+                <label class="form__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  0,90 м<sup>2</sup>
+                </label>
+                <label class="form__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  1,13 м<sup>2</sup>
+                </label>
+                <label class="form__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  1,56 м<sup>2</sup>
+                </label>
+                <label class="form__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  2,56 м<sup>2</sup>
+                </label>
+                <label class="form__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  2,88 м<sup>2</sup>
+                </label>
+              </fieldset>
+
+              <fieldset class="form__features">
+                <legend>Оснащение номера</legend>
+                <label class="form__checkbox checkbox checkbox--features">
+                  <input class="checkbox__input visually-hidden" name="emptyRoom" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  Пустой номер
+                </label>
+                <label class="form__checkbox checkbox checkbox--features">
+                  <input class="checkbox__input visually-hidden" name="lying" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  Лежак
+                </label>
+                <label class="form__checkbox checkbox checkbox--features">
+                  <input class="checkbox__input visually-hidden" name="claw" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  Когтеточка
+                </label>
+                <label class="form__checkbox checkbox checkbox--features">
+                  <input class="checkbox__input visually-hidden" name="playComplex" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  Игровой комплекс
+                </label>
+                <label class="form__checkbox checkbox checkbox--features">
+                  <input class="checkbox__input visually-hidden" name="house" type="checkbox" checked>
+                  <span class="checkbox__icon"></span>
+                  Домик
+                </label>
+              </fieldset>
+
+              <button class="form__button form__submit" type="submit">Подобрать</button>
+              <button class="form__button form__reset" type="reset">Сбросить фильтр</button>
+            </form>
           </div>
+          </section>
+          <section class="cards">
+          <h2 class="visually-hidden">Варианты номеров</h2>
+          <div class="cards__wrapper container">
+            <div class="cards__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-one-desktop@2x.webp 2x, img/cat-one-desktop@1x.webp 1x"> -->
+                <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-one-tablet@2x.webp 2x, img/cat-one-tablet@1x.webp 1x"> -->
+                <!-- <source type="image/webp" srcset="img/cat-one-mobile@2x.webp 2x, img/cat-one-mobile@1x.webp 1x"> -->
 
-          <div id="economyPlus" class="cards__item">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-two-desktop@2x.webp 2x, img/cat-two-desktop@1x.webp 1x"> -->
-              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-two-tablet@2x.webp 2x, img/cat-two-tablet@1x.webp 1x"> -->
-              <!-- <source type="image/webp" srcset="img/cat-two-mobile@2x.webp 2x, img/cat-two-mobile@1x.webp 1x"> -->
+                <source media="(min-width: 1170px)" srcset="img/cat-one-desktop@2x.jpg 2x, img/cat-one-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/cat-one-tablet@2x.jpg 2x, img/cat-one-tablet@1x.jpg 1x">
+                <img src="img/cat-one-mobile@1x.jpg" srcset="img/cat-one-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Серая котейка на лежанке">
+              </picture>
 
-              <!-- <source media="(min-width: 960px)" srcset="img/cat-two-desktop@2x.jpg 2x, img/cat-two-desktop@1x.jpg 1x"> -->
-              <source media="(min-width: 768px)" srcset="img/cat-two-tablet@2x.jpg 2x, img/cat-two-tablet@1x.jpg 1x">
-              <img src="img/cat-two-mobile@1x.jpg" srcset="img/cat-two-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Богатка на когтеточке">
-            </picture>
-
-            <div class="cards__description">
-              <h3 class="cards__heading">Эконом плюс</h3>
-              <ul class="cards__list">
-                <li class="cards__list-item">Размеры (ШхГхВ) - 90х100х180 см</li>
-                <li class="cards__list-item">Площадь - 0,90 м<sup>2</sup></li>
-                <li class="cards__list-item">Оснащение номера
-                  <div class="cards__features">
-                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                  </div>
+              <div class="cards__description">
+                <h3 class="cards__heading">Эконом</h3>
+                <ul class="cards__list">
+                  <li class="cards__list-item">Размеры (ШхГхВ) - 90х70х180 см</li>
+                  <li class="cards__list-item">Площадь - 0,63 м<sup>2</sup></li>
+                  <li class="cards__list-item">Оснащение номера
+                    <div class="cards__features">
+                      <span class="cards__features-item cards__features-item--empty" aria-label="Пустой номер"></span>
+                    </div>
                   </li>
-                <li class="cards__list-item">Цена за сутки: <span class="cards__price">200</span></li>
-              </ul>
+                  <li class="cards__list-item">Цена за сутки: <span class="cards__price">100</span></li>
+                </ul>
 
-              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+                <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              </div>
+            </div>
+
+            <div id="economyPlus" class="cards__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-two-desktop@2x.webp 2x, img/cat-two-desktop@1x.webp 1x"> -->
+                <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-two-tablet@2x.webp 2x, img/cat-two-tablet@1x.webp 1x"> -->
+                <!-- <source type="image/webp" srcset="img/cat-two-mobile@2x.webp 2x, img/cat-two-mobile@1x.webp 1x"> -->
+
+                <source media="(min-width: 1170px)" srcset="img/cat-two-desktop@2x.jpg 2x, img/cat-two-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/cat-two-tablet@2x.jpg 2x, img/cat-two-tablet@1x.jpg 1x">
+                <img src="img/cat-two-mobile@1x.jpg" srcset="img/cat-two-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Богатка на когтеточке">
+              </picture>
+
+              <div class="cards__description">
+                <h3 class="cards__heading">Эконом плюс</h3>
+                <ul class="cards__list">
+                  <li class="cards__list-item">Размеры (ШхГхВ) - 90х100х180 см</li>
+                  <li class="cards__list-item">Площадь - 0,90 м<sup>2</sup></li>
+                  <li class="cards__list-item">Оснащение номера
+                    <div class="cards__features">
+                      <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                      <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                    </div>
+                    </li>
+                  <li class="cards__list-item">Цена за сутки: <span class="cards__price">200</span></li>
+                </ul>
+
+                <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              </div>
+            </div>
+
+            <div id="comfort" class="cards__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x"> -->
+                <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x"> -->
+                <!-- <source type="image/webp" srcset="img/cat-three-mobile@2x.webp 2x, img/cat-three-mobile@1x.webp 1x"> -->
+
+                <source media="(min-width: 1170px)" srcset="img/cat-three-desktop@2x.jpg 2x, img/cat-three-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.jpg 2x, img/cat-three-tablet@1x.jpg 1x">
+                <img src="img/cat-three-mobile@1x.jpg" srcset="img/cat-three-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Британка на когтеточке">
+              </picture>
+
+              <div class="cards__description">
+                <h3 class="cards__heading">Комфорт</h3>
+                <ul class="cards__list">
+                  <li class="cards__list-item">Размеры (ШхГхВ) - 100х125х180 см</li>
+                  <li class="cards__list-item">Площадь - 1,13 м<sup>2</sup></li>
+                  <li class="cards__list-item">Оснащение номера
+                    <div class="cards__features">
+                      <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                      <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                      <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                    </div>
+                  </li>
+                  <li class="cards__list-item">Цена за сутки: <span class="cards__price">250</span></li>
+                </ul>
+
+                <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              </div>
+            </div>
+
+            <div id="sue" class="cards__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x"> -->
+                <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x"> -->
+                <!-- <source type="image/webp" srcset="img/cat-four-mobile@2x.webp 2x, img/cat-four-mobile@1x.webp 1x"> -->
+
+                <source media="(min-width: 1170px)" srcset="img/cat-four-desktop@2x.jpg 2x, img/cat-four-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.jpg 2x, img/cat-four-tablet@1x.jpg 1x">
+                <img src="img/cat-four-mobile@1x.jpg" srcset="img/cat-four-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Китса в корзинке у окна">
+              </picture>
+
+              <div class="cards__description">
+                <h3 class="cards__heading">Сьют</h3>
+                <ul class="cards__list">
+                  <li class="cards__list-item">Размеры (ШхГхВ) - 125х125х180 см</li>
+                  <li class="cards__list-item">Площадь - 1,56 м<sup>2</sup></li>
+                  <li class="cards__list-item">Оснащение номера
+                    <div class="cards__features">
+                      <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                      <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                      <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                    </div>
+                  </li>
+                  <li class="cards__list-item">Цена за сутки: <span class="cards__price">350</span></li>
+                </ul>
+
+                <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              </div>
+            </div>
+
+            <div class="cards__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-five-desktop@2x.webp 2x, img/cat-five-desktop@1x.webp 1x"> -->
+                <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-five-tablet@2x.webp 2x, img/cat-five-tablet@1x.webp 1x"> -->
+                <!-- <source type="image/webp" srcset="img/cat-five-mobile@2x.webp 2x, img/cat-five-mobile@1x.webp 1x"> -->
+
+                <source media="(min-width: 1170px)" srcset="img/cat-five-desktop@2x.jpg 2x, img/cat-five-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/cat-five-tablet@2x.jpg 2x, img/cat-five-tablet@1x.jpg 1x">
+                <img src="img/cat-five-mobile@1x.jpg" srcset="img/cat-five-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Рыжая киса в лежаке">
+              </picture>
+
+              <div class="cards__description">
+                <h3 class="cards__heading">Люкс</h3>
+                <ul class="cards__list">
+                  <li class="cards__list-item">Размеры (ШхГхВ) - 160х160х180 см</li>
+                  <li class="cards__list-item">Площадь - 2,56 м<sup>2</sup></li>
+                  <li class="cards__list-item">Оснащение номера
+                    <div class="cards__features">
+                      <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                      <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                      <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                      <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
+                    </div>
+                  </li>
+                  <li class="cards__list-item">Цена за сутки: <span class="cards__price">500</span></li>
+                </ul>
+
+                <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              </div>
+            </div>
+
+            <div class="cards__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-six-desktop@2x.webp 2x, img/cat-six-desktop@1x.webp 1x"> -->
+                <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-six-tablet@2x.webp 2x, img/cat-six-tablet@1x.webp 1x"> -->
+                <!-- <source type="image/webp" srcset="img/cat-six-mobile@2x.webp 2x, img/cat-six-mobile@1x.webp 1x"> -->
+
+                <source media="(min-width: 1170px)" srcset="img/cat-six-desktop@2x.jpg 2x, img/cat-six-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/cat-six-tablet@2x.jpg 2x, img/cat-six-tablet@1x.jpg 1x">
+                <img src="img/cat-six-mobile@1x.jpg" srcset="img/cat-six-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Белая китса играет">
+              </picture>
+
+              <div class="cards__description">
+                <h3 class="cards__heading">Супер-Люкс</h3>
+                <ul class="cards__list">
+                  <li class="cards__list-item">Размеры (ШхГхВ) - 180х160х180 см</li>
+                  <li class="cards__list-item">Площадь - 2,88 м<sup>2</sup></li>
+                  <li class="cards__list-item">Оснащение номера
+                    <div class="cards__features">
+                      <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
+                      <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
+                      <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
+                      <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
+                    </div>
+                  </li>
+                  <li class="cards__list-item">Цена за сутки: <span class="cards__price">600</span></li>
+                </ul>
+
+                <a class="cards__link orange-button" href="booking.html">Забронировать</a>
+              </div>
             </div>
           </div>
-
-          <div id="comfort" class="cards__item">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x"> -->
-              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x"> -->
-              <!-- <source type="image/webp" srcset="img/cat-three-mobile@2x.webp 2x, img/cat-three-mobile@1x.webp 1x"> -->
-
-              <!-- <source media="(min-width: 960px)" srcset="img/cat-three-desktop@2x.jpg 2x, img/cat-three-desktop@1x.jpg 1x"> -->
-              <source media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.jpg 2x, img/cat-three-tablet@1x.jpg 1x">
-              <img src="img/cat-three-mobile@1x.jpg" srcset="img/cat-three-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Британка на когтеточке">
-            </picture>
-
-            <div class="cards__description">
-              <h3 class="cards__heading">Комфорт</h3>
-              <ul class="cards__list">
-                <li class="cards__list-item">Размеры (ШхГхВ) - 100х125х180 см</li>
-                <li class="cards__list-item">Площадь - 1,13 м<sup>2</sup></li>
-                <li class="cards__list-item">Оснащение номера
-                  <div class="cards__features">
-                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                  </div>
-                </li>
-                <li class="cards__list-item">Цена за сутки: <span class="cards__price">250</span></li>
-              </ul>
-
-              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
-            </div>
-          </div>
-
-          <div id="sue" class="cards__item">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x"> -->
-              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x"> -->
-              <!-- <source type="image/webp" srcset="img/cat-four-mobile@2x.webp 2x, img/cat-four-mobile@1x.webp 1x"> -->
-
-              <!-- <source media="(min-width: 960px)" srcset="img/cat-four-desktop@2x.jpg 2x, img/cat-four-desktop@1x.jpg 1x"> -->
-              <source media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.jpg 2x, img/cat-four-tablet@1x.jpg 1x">
-              <img src="img/cat-four-mobile@1x.jpg" srcset="img/cat-four-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Китса в корзинке у окна">
-            </picture>
-
-            <div class="cards__description">
-              <h3 class="cards__heading">Сьют</h3>
-              <ul class="cards__list">
-                <li class="cards__list-item">Размеры (ШхГхВ) - 125х125х180 см</li>
-                <li class="cards__list-item">Площадь - 1,56 м<sup>2</sup></li>
-                <li class="cards__list-item">Оснащение номера
-                  <div class="cards__features">
-                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                  </div>
-                </li>
-                <li class="cards__list-item">Цена за сутки: <span class="cards__price">350</span></li>
-              </ul>
-
-              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
-            </div>
-          </div>
-
-          <div class="cards__item">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-five-desktop@2x.webp 2x, img/cat-five-desktop@1x.webp 1x"> -->
-              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-five-tablet@2x.webp 2x, img/cat-five-tablet@1x.webp 1x"> -->
-              <!-- <source type="image/webp" srcset="img/cat-five-mobile@2x.webp 2x, img/cat-five-mobile@1x.webp 1x"> -->
-
-              <!-- <source media="(min-width: 960px)" srcset="img/cat-five-desktop@2x.jpg 2x, img/cat-five-desktop@1x.jpg 1x"> -->
-              <source media="(min-width: 768px)" srcset="img/cat-five-tablet@2x.jpg 2x, img/cat-five-tablet@1x.jpg 1x">
-              <img src="img/cat-five-mobile@1x.jpg" srcset="img/cat-five-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Рыжая киса в лежаке">
-            </picture>
-
-            <div class="cards__description">
-              <h3 class="cards__heading">Люкс</h3>
-              <ul class="cards__list">
-                <li class="cards__list-item">Размеры (ШхГхВ) - 160х160х180 см</li>
-                <li class="cards__list-item">Площадь - 2,56 м<sup>2</sup></li>
-                <li class="cards__list-item">Оснащение номера
-                  <div class="cards__features">
-                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                    <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
-                  </div>
-                </li>
-                <li class="cards__list-item">Цена за сутки: <span class="cards__price">500</span></li>
-              </ul>
-
-              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
-            </div>
-          </div>
-
-          <div class="cards__item">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/cat-six-desktop@2x.webp 2x, img/cat-six-desktop@1x.webp 1x"> -->
-              <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/cat-six-tablet@2x.webp 2x, img/cat-six-tablet@1x.webp 1x"> -->
-              <!-- <source type="image/webp" srcset="img/cat-six-mobile@2x.webp 2x, img/cat-six-mobile@1x.webp 1x"> -->
-
-              <!-- <source media="(min-width: 960px)" srcset="img/cat-six-desktop@2x.jpg 2x, img/cat-six-desktop@1x.jpg 1x"> -->
-              <source media="(min-width: 768px)" srcset="img/cat-six-tablet@2x.jpg 2x, img/cat-six-tablet@1x.jpg 1x">
-              <img src="img/cat-six-mobile@1x.jpg" srcset="img/cat-six-mobile@2x.jpg 2x" class="cards__img" width="290" height="185" alt="Белая китса играет">
-            </picture>
-
-            <div class="cards__description">
-              <h3 class="cards__heading">Супер-Люкс</h3>
-              <ul class="cards__list">
-                <li class="cards__list-item">Размеры (ШхГхВ) - 180х160х180 см</li>
-                <li class="cards__list-item">Площадь - 2,88 м<sup>2</sup></li>
-                <li class="cards__list-item">Оснащение номера
-                  <div class="cards__features">
-                    <span class="cards__features-item cards__features-item--lying" aria-label="Лежак"></span>
-                    <span class="cards__features-item cards__features-item--claw" aria-label="Когтеточка"></span>
-                    <span class="cards__features-item cards__features-item--play-complex" aria-label="Игровой комплекс"></span>
-                    <span class="cards__features-item cards__features-item--house" aria-label="Домик"></span>
-                  </div>
-                </li>
-                <li class="cards__list-item">Цена за сутки: <span class="cards__price">600</span></li>
-              </ul>
-
-              <a class="cards__link orange-button" href="booking.html">Забронировать</a>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <article id="Promotion" class="promo">
         <h2>Каждый 7-й день<br><span>бесплатно!</span></h2>

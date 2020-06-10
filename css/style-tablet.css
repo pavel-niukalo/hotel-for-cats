@@ -423,11 +423,22 @@
 
   /* catalog.html */
 
+  /* wrapper */
+
+  .wrapper {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+
   /* page-heading */
 
   .page-heading {
     display: inline-block;
-    padding: 125px 15px 15px 45px;
+    padding: 126px 15px 42px;
 
     font-size: 36px;
     line-height: 43px;
@@ -436,15 +447,36 @@
   /* filters */
 
   .filters {
-    display: inline-flex;
+    position: absolute;
+    top: 117px;
+    right: 223px;
+  }
 
-    margin: 19px auto 38px 90px;
+  .filters__form-wrapper--opened {
+    left: -9%;
+    top: 0;
+
+    width: 332px;
+    padding: 47px 47px 25px 60px;
+    margin-left: -166px;
+  }
+
+  .filters__close {
+    right: 24px;
+    top: 24px;
+  }
+
+  /* form */
+
+  .form__button {
+    width: 212px;
+    padding: 10px 25px 11px 25px;
   }
 
   /*select */
 
   .select {
-    right: 45px;
+    top: 118px;
   }
 
   .select__current {
@@ -501,9 +533,7 @@
     width: 678px;
     height: 359px;
     padding: 54px 50px;
-    margin: 90px auto;
-
-    text-align: center;
+    margin: 91px auto;
 
     background-color: #F3B55F;
     background-image: url("../img/promotion-tablet@1x.jpg");
@@ -512,10 +542,13 @@
   }
 
   .promo::before {
+    top: -20px;
+    left: -25px;
+
     width: 150px;
     height: 156px;
 
-    background-image: url("../img/promotion-paw-tablet.svg");
+    background-size: 200px;
   }
 
   @media (min-resolution: 1.5dppx) {

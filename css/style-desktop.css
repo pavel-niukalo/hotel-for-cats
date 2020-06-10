@@ -302,6 +302,182 @@
     margin-right: 200px;
     margin-left: 198px;
   }
+
+  /* catalog.html */
+
+  /* wrapper */
+
+  .wrapper {
+    width: 1170px;
+  }
+
+  /* page-heading */
+
+  .page-heading {
+    display: inline-block;
+    padding: 136px 0 48px;
+
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  /* catalog-wrapper */
+
+  .catalog-wrapper {
+    display: flex;
+  }
+
+  /* filters */
+
+  .filters {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .filters__open,
+  .filters__close {
+    display: none;
+  }
+
+  .filters__form-wrapper,
+  .filters__form-wrapper--opened {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+    width: 290px;
+    padding: 0;
+
+    background-color: #FFFEFD;
+    box-shadow: none;
+  }
+
+  /* form */
+
+  .form__price legend {
+    margin-bottom: 17px;
+  }
+
+  .form__square legend,
+  .form__features legend {
+    margin-bottom: 14px;
+  }
+
+  .form__input {
+    width: 80px;
+    padding: 2px 14px 3px 4px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+  }
+
+  .form .form__price {
+    margin-bottom: 21px;
+  }
+
+  .form .form__square {
+    margin-bottom: 19px;
+  }
+
+  .form .form__features {
+    margin-bottom: 25px;
+  }
+
+  .form__button {
+    width: 185px;
+  }
+
+  /* checkbox */
+
+  .checkbox {
+    padding-left: 30px;
+    margin-bottom: 14px;
+  }
+
+  .checkbox--features {
+  margin-bottom: 9px;
+}
+
+  .checkbox__icon {
+    top: 3px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  /*select */
+
+  .select {
+    top: 128px;
+    right: 0;
+  }
+
+  /* cards */
+
+  .cards__wrapper {
+    max-width: 870px;
+    padding: 4px 0;
+  }
+
+  .cards__item {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .cards__item img {
+    width: 270px;
+    height: 185px;
+  }
+
+  .cards__description {
+    padding: 20px 17px 24px 19px;
+    margin-top: -5px;
+  }
+
+
+  .cards__link {
+    width: 118px;
+    padding-left: 50px;
+
+    background-position: 189px;
+  }
+
+  /* promotion */
+
+  .promo {
+    width: 1170px;
+    height: 379px;
+    padding: 63px 269px;
+    margin-top: 107px;
+    margin-bottom: 140px;
+
+    background-image: url("../img/promotion-desktop@1x.jpg");
+  }
+
+  .promo::before {
+    top: -38px;
+    left: -19px;
+
+    width: 250px;
+    height: 256px;
+
+    background-size: 320px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .promo {
+      background-image: url("../img/promotion-desktop@2x.jpg");
+      background-size: 1170px 379px;
+    }
+  }
+
+  .promo p {
+    margin-bottom: 31px;
+  }
 }
 
 
