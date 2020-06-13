@@ -6,6 +6,9 @@
   var mainNavButton = mainNav.querySelector('.main-nav__button');
   var mainNavLinks = mainNav.querySelectorAll('.main-nav__link');
 
+// ПЕРЕПИСАТЬ С classList.toggle!!!
+// https://codepen.io/triss90/pen/zzZXON - пример вертикального меню
+
   mainNav.classList.remove('main-nav--nojs');
   mainNav.classList.add('main-nav--closed');
 
