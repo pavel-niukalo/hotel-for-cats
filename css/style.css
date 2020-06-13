@@ -185,9 +185,16 @@ a {
   color: #1A212F;
 }
 
-.main-nav__open,
-.main-nav__close {
+.main-nav__button {
   position: fixed;
+  top: 11px;
+  right: 10px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
 
   padding: 0;
 
@@ -195,53 +202,71 @@ a {
   border: 0;
 
   cursor: pointer;
+  outline: none;
 }
 
-.main-nav__open {
-  right: 24px;
-  top: 23px;
+.line {
+  fill: none;
+  stroke: #1A212F;
+  stroke-width: 6;
+  -webkit-transition: stroke-dasharray 800ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: stroke-dasharray 800ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 800ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
-.main-nav__close {
-  right: 24px;
-  top: 24px;
-}
-
-.main-nav__open:hover path,
-.main-nav__open:focus path {
+.main-nav__button:hover path,
+.main-nav__button:focus path {
   stroke: #FF7236;
 
-  -webkit-transition: 0.3s linear;
+  -webkit-transition: 800ms;
 
-  -o-transition: 0.3s linear;
+  -o-transition: 800ms;
 
-  transition: 0.3s linear;
+  transition: 800ms;
 }
 
-.main-nav__open:active path {
-  stroke: #FAC663;
-}
-
-.main-nav__close:hover path{
+.main-nav--opened .main-nav__button:hover path,
+.main-nav--opened .main-nav__button:focus path {
   stroke: #FFFEFD;
 
-  -webkit-transition: 0.3s linear;
+  -webkit-transition: 800ms;
 
-  -o-transition: 0.3s linear;
+  -o-transition: 800ms;
 
-  transition: 0.3s linear;
+  transition: 800ms;
 }
 
-.main-nav__close:active path{
-  stroke: #141312;
-}
-
-.main-nav--closed .main-nav__list-wrapper,
-.main-nav--closed .main-nav__close {
-  display: none;
-}
-
-.main-nav--opened .main-nav__open {
+.main-nav--closed .main-nav__list-wrapper {
   display: none;
 }
 
@@ -2355,8 +2380,7 @@ footer {
     color: #1A212F;
   }
 
-  .main-nav__open,
-  .main-nav__close {
+  .main-nav__button {
     display: none;
   }
 
