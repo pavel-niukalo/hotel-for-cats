@@ -1,42 +1,41 @@
 'use strict';
 
 (function () {
-  var pageHeader = document.querySelector('.page-header');
-  var mainNav = pageHeader.querySelector('.main-nav');
-  var mainNavButton = mainNav.querySelector('.main-nav__button');
-  var mainNavLinks = mainNav.querySelectorAll('.main-nav__link');
+  let pageHeader = document.querySelector('.page-header');
+  let pageHeaderButton = pageHeader.querySelector('.page-header__button');
+  let mainNav = pageHeader.querySelector('.main-nav');
+  let mainNavLinks = mainNav.querySelectorAll('.main-nav__link');
 
-// ПЕРЕПИСАТЬ С classList.toggle!!!
-// https://codepen.io/triss90/pen/zzZXON - пример вертикального меню
-
+  pageHeader.classList.remove('page-header--nojs');
   mainNav.classList.remove('main-nav--nojs');
   mainNav.classList.add('main-nav--closed');
+  window.scrollTo(0, 0);
 
-  var openNav = function() {
+  let openNav = function() {
     mainNav.classList.remove('main-nav--closed');
     mainNav.classList.add('main-nav--opened');
     pageHeader.classList.add('page-header--opened');
   };
 
-  var closeNav = function() {
+  let closeNav = function() {
     mainNav.classList.remove('main-nav--opened');
     pageHeader.classList.remove('page-header--opened');
     mainNav.classList.add('main-nav--closed');
   };
 
-  mainNavButton.addEventListener('click', function() {
-    if (mainNavButton.classList.contains('opened')) {
-      mainNavButton.classList.remove('opened');
+  pageHeaderButton.addEventListener('click', function() {
+    if (pageHeaderButton.classList.contains('opened')) {
+      pageHeaderButton.classList.remove('opened');
       closeNav();
     } else {
-      mainNavButton.classList.add('opened');
+      pageHeaderButton.classList.add('opened');
       openNav();
     }
   });
 
   mainNavLinks.forEach(function (item) {
     item.addEventListener('click', function() {
-      mainNavButton.classList.remove('opened');
+      pageHeaderButton.classList.remove('opened');
       closeNav();
     });
   });
