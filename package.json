@@ -4,5 +4,10 @@
   "description": "Адаптивный макет для тренировки и закрепления навыков - \"Отель для кошек\".",
   "scripts": {
     "webp": "gulp webp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-webp": "^4.0.1"
   }
 }
