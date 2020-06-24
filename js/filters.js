@@ -1,18 +1,18 @@
 'use strict';
 
 (function () {
-  var filters = document.querySelector('.filters__form-wrapper');
-  var filtersOpen = document.querySelector('.filters__open');
-  var filtersClose = document.querySelector('.filters__close');
-  var form = document.querySelector('.form');
-  var formSubmit = form.querySelector('.form__submit');
-  var formReset = form.querySelector('.form__reset');
-  var checkboxes = form.querySelectorAll('.checkbox__input');
-  var inputs = form.querySelectorAll('.form__input');
+  let filters = document.querySelector('.filters__form-wrapper');
+  let filtersOpen = document.querySelector('.filters__open');
+  let filtersClose = document.querySelector('.filters__close');
+  let form = document.querySelector('.form');
+  let formSubmit = form.querySelector('.form__submit');
+  let formReset = form.querySelector('.form__reset');
+  let checkboxes = form.querySelectorAll('.checkbox__input');
+  let inputs = form.querySelectorAll('.form__input');
 
-  var background = document.querySelector('.background__page');
+  let background = document.querySelector('.background__page');
 
-  var openFilter = function () {
+  let openFilter = function () {
     background.classList.add('background__page--isActive');
 
     filters.classList.add('filters__form-wrapper--opened');
@@ -26,7 +26,7 @@
     });
   };
 
-  var closeFilter = function () {
+  let closeFilter = function () {
     background.classList.remove('background__page--isActive');
 
     filters.classList.remove('filters__form-wrapper--opened');

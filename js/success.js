@@ -1,20 +1,20 @@
 'use strict';
 
 (function () {
-  var templateSuccess = document.querySelector('#success')
+  let templateSuccess = document.querySelector('#success')
     .content
     .querySelector('.success');
 
-  var background = document.querySelector('.background__page');
+  let background = document.querySelector('.background__page');
 
-  var showMessage = function () {
-    var success = templateSuccess.cloneNode(true);
+  let showMessage = function () {
+    let success = templateSuccess.cloneNode(true);
 
-    var onSuccessEscPress = function (evt) {
+    let onSuccessEscPress = function (evt) {
       window.util.isEscapeEvent(evt, closeSuccess);
     };
 
-    var closeSuccess = function () {
+    let closeSuccess = function () {
       background.classList.remove('background__page--isActive');
 
       success.remove();

@@ -1,12 +1,12 @@
 'use strict';
 
 (function () {
-  var select = document.querySelector('.select');
-  var selectCurrent = select.querySelector('.select__current');
-  var selectItem = select.querySelectorAll('.select__item');
+  let select = document.querySelector('.select');
+  let selectCurrent = select.querySelector('.select__current');
+  let selectItem = select.querySelectorAll('.select__item');
 
-  var chooseItem = function (item) {
-    var itemText = item.innerHTML;
+  let chooseItem = function (item) {
+    let itemText = item.innerHTML;
     selectCurrent.innerHTML = itemText;
     item.removeEventListener('click', function() {
       chooseItem(item);
