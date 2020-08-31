@@ -10,7 +10,8 @@
     <link rel="preload" href="fonts/rubikbold.woff2" as="font">
     <link rel="preload" href="fonts/latoregular.woff2" as="font">
     <link rel="preload" href="fonts/latobold.woff2" as="font">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -140,82 +141,88 @@
         </div>
       </section>
 
+
       <section id="Rooms" class="rooms">
         <h2 class="rooms__heading section-heading">Номера</h2>
-        <div class="rooms__wrapper">
-          <div class="rooms__item rooms__item--one rooms__item--active">
-            <picture>
-              <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-seven-desktop@2x.webp 2x, img/cat-seven-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-seven-tablet@2x.webp 2x, img/cat-seven-tablet@1x.webp 1x">
-              <source type="image/webp" srcset="img/cat-seven-mobile@2x.webp 2x, img/cat-seven-mobile@1x.webp 1x">
+          <div class="rooms__wrapper swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide rooms__item">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-seven-desktop@2x.webp 2x, img/cat-seven-desktop@1x.webp 1x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-seven-tablet@2x.webp 2x, img/cat-seven-tablet@1x.webp 1x">
+                    <source type="image/webp" srcset="img/cat-seven-mobile@2x.webp 2x, img/cat-seven-mobile@1x.webp 1x">
 
-              <source media="(min-width: 1170px)" srcset="img/cat-seven-desktop@2x.jpg 2x, img/cat-seven-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/cat-seven-tablet@2x.jpg 2x, img/cat-seven-tablet@1x.jpg 1x">
-              <img src="img/cat-seven-mobile@1x.jpg" srcset="img/cat-seven-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
-            </picture>
-            <div class="room__description">
-              <h2 class="rooms__item-heading">Эконом плюс</h2>
-              <ul class="rooms__list">
-                <li class="rooms__list-item">Площадь - 0,90 м<sup>2</sup></li>
-                <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">90х100х180 см</span></li>
-                <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">200</span></li>
-              </ul>
-              <a class="rooms__link orange-button" href="catalog.html#economyPlus">Забронировать</a>
+                    <source media="(min-width: 1170px)" srcset="img/cat-seven-desktop@2x.jpg 2x, img/cat-seven-desktop@1x.jpg 1x">
+                    <source media="(min-width: 768px)" srcset="img/cat-seven-tablet@2x.jpg 2x, img/cat-seven-tablet@1x.jpg 1x">
+                    <img src="img/cat-seven-mobile@1x.jpg" srcset="img/cat-seven-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Милая котейка в домике">
+                  </picture>
+                  <div class="room__description">
+                    <h2 class="rooms__item-heading">Эконом плюс</h2>
+                    <ul class="rooms__list">
+                      <li class="rooms__list-item">Площадь - 0,90 м<sup>2</sup></li>
+                      <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">90х100х180 см</span></li>
+                      <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">200</span></li>
+                    </ul>
+                    <a class="rooms__link orange-button" href="catalog.html#economyPlus">Забронировать</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide rooms__item">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x">
+                    <source type="image/webp" srcset="img/cat-three-mobile@2x.webp 2x, img/cat-three-mobile@1x.webp 1x">
+
+                    <source media="(min-width: 1170px)" srcset="img/cat-three-desktop@2x.jpg 2x, img/cat-three-desktop@1x.jpg 1x">
+                    <source media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.jpg 2x, img/cat-three-tablet@1x.jpg 1x">
+                    <img src="img/cat-three-mobile@1x.jpg" srcset="img/cat-three-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Серая китса на когтеточке">
+                  </picture>
+                  <div class="room__description">
+                    <h2 class="rooms__item-heading">Комфорт</h2>
+                    <ul class="rooms__list">
+                      <li class="rooms__list-item">Площадь - 1,13 м<sup>2</sup></li>
+                      <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">100х125х250 см</span></li>
+                      <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">250</span></li>
+                    </ul>
+                    <a class="rooms__link orange-button" href="catalog.html#comfort">Забронировать</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide rooms__item">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x">
+                    <source type="image/webp" srcset="img/cat-four-mobile@2x.webp 2x, img/cat-four-mobile@1x.webp 1x">
+
+                    <source media="(min-width: 1170px)" srcset="img/cat-four-desktop@2x.jpg 2x, img/cat-four-desktop@1x.jpg 1x">
+                    <source media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.jpg 2x, img/cat-four-tablet@1x.jpg 1x">
+                    <img src="img/cat-four-mobile@1x.jpg" srcset="img/cat-four-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Китса в корзинке у окна">
+                  </picture>
+                  <div class="room__description">
+                    <h2 class="rooms__item-heading">Сьют</h2>
+                    <ul class="rooms__list">
+                      <li class="rooms__list-item">Площадь - 1,56 м<sup>2</sup></li>
+                      <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">125х125х180 см</span></li>
+                      <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">350</span></li>
+                    </ul>
+                    <a class="rooms__link orange-button" href="catalog.html#sue">Забронировать</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-pagination rooms__pagination"></div>
+
+            <div class="swiper-buttons">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
-
-          <div class="rooms__item rooms__item--two">
-            <picture>
-              <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x">
-              <source type="image/webp" srcset="img/cat-three-mobile@2x.webp 2x, img/cat-three-mobile@1x.webp 1x">
-
-              <source media="(min-width: 1170px)" srcset="img/cat-three-desktop@2x.jpg 2x, img/cat-three-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.jpg 2x, img/cat-three-tablet@1x.jpg 1x">
-              <img src="img/cat-three-mobile@1x.jpg" srcset="img/cat-three-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Серая китса на когтеточке">
-            </picture>
-            <div class="room__description">
-              <h2 class="rooms__item-heading">Комфорт</h2>
-              <ul class="rooms__list">
-                <li class="rooms__list-item">Площадь - 1,13 м<sup>2</sup></li>
-                <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">100х125х250 см</span></li>
-                <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">250</span></li>
-              </ul>
-              <a class="rooms__link orange-button" href="catalog.html#comfort">Забронировать</a>
-            </div>
-          </div>
-
-          <div class="rooms__item rooms__item--three">
-            <picture>
-              <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x">
-              <source type="image/webp" srcset="img/cat-four-mobile@2x.webp 2x, img/cat-four-mobile@1x.webp 1x">
-
-              <source media="(min-width: 1170px)" srcset="img/cat-four-desktop@2x.jpg 2x, img/cat-four-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.jpg 2x, img/cat-four-tablet@1x.jpg 1x">
-              <img src="img/cat-four-mobile@1x.jpg" srcset="img/cat-four-mobile@2x.jpg 2x" class="rooms__picture" width="290" height="192" alt="Китса в корзинке у окна">
-            </picture>
-            <div class="room__description">
-              <h2 class="rooms__item-heading">Сьют</h2>
-              <ul class="rooms__list">
-                <li class="rooms__list-item">Площадь - 1,56 м<sup>2</sup></li>
-                <li class="rooms__list-item">Размеры (ШхГхВ) <span class="rooms__sizes">125х125х180 см</span></li>
-                <li class="rooms__list-item">Цена за сутки: <span class="rooms__price">350</span></li>
-              </ul>
-              <a class="rooms__link orange-button" href="catalog.html#sue">Забронировать</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="rooms__slider slider">
-          <button class="slider__toogle slider__toogle--one slider__toogle--active" type="button"></button>
-          <button class="slider__toogle slider__toogle--two" type="button"></button>
-          <button class="slider__toogle slider__toogle--three" type="button"></button>
-
-          <button class="slider__button slider__button--left" type="button"></button>
-          <button class="slider__button slider__button--right" type="button"></button>
         </div>
       </section>
+
 
       <section id="Reviews" class="reviews">
         <h2 class="reviews__heading section-heading">Отзывы</h2>
@@ -367,5 +374,7 @@
     <script src="js/menu.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU"></script>
     <script src="js/map.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
