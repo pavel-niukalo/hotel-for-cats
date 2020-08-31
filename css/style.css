@@ -3414,7 +3414,7 @@ footer {
 
   .swiper-button-prev:hover,
   .swiper-button-next:hover,
-  .swiper-button-prev:focus
+  .swiper-button-prev:focus,
   .swiper-button-next:focus {
     background-color: #FF7236;
     cursor: pointer;
