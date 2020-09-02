@@ -10,7 +10,7 @@
     <link rel="preload" href="fonts/rubikbold.woff2" as="font">
     <link rel="preload" href="fonts/latoregular.woff2" as="font">
     <link rel="preload" href="fonts/latobold.woff2" as="font">
-    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/swiper-bundle-min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -144,10 +144,13 @@
 
       <section id="Rooms" class="rooms">
         <h2 class="rooms__heading section-heading">Номера</h2>
-          <div class="rooms__wrapper swiper">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide rooms__item">
+
+        <article class="rooms__wrapper swiper">
+          <div class="swiper-container-rooms">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="rooms__item">
                   <picture>
                     <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-seven-desktop@2x.webp 2x, img/cat-seven-desktop@1x.webp 1x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-seven-tablet@2x.webp 2x, img/cat-seven-tablet@1x.webp 1x">
@@ -167,8 +170,10 @@
                     <a class="rooms__link orange-button" href="catalog.html#economyPlus">Забронировать</a>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide rooms__item">
+              <div class="swiper-slide">
+                <div class="rooms__item">
                   <picture>
                     <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-three-desktop@2x.webp 2x, img/cat-three-desktop@1x.webp 1x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-three-tablet@2x.webp 2x, img/cat-three-tablet@1x.webp 1x">
@@ -188,8 +193,10 @@
                     <a class="rooms__link orange-button" href="catalog.html#comfort">Забронировать</a>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide rooms__item">
+              <div class="swiper-slide ">
+                <div class="rooms__item">
                   <picture>
                     <source type="image/webp" media="(min-width: 1170px)" srcset="img/cat-four-desktop@2x.webp 2x, img/cat-four-desktop@1x.webp 1x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-four-tablet@2x.webp 2x, img/cat-four-tablet@1x.webp 1x">
@@ -209,57 +216,65 @@
                     <a class="rooms__link orange-button" href="catalog.html#sue">Забронировать</a>
                   </div>
                 </div>
-
               </div>
             </div>
 
             <div class="swiper-pagination rooms__pagination"></div>
 
             <div class="swiper-buttons">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev swiper-button-prev-rooms"></div>
+              <div class="swiper-button-next swiper-button-next-rooms"></div>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
 
       <section id="Reviews" class="reviews">
         <h2 class="reviews__heading section-heading">Отзывы</h2>
-        <div class="reviews__wrapper">
-          <div class="reviews__item reviews__item--one">
-            <blockquote class="reviews__quote">
-              <p class="reviews__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</p>
-            </blockquote>
-            <span class="reviews__author">Валерия Гришаева</span>
-            <span class="reviews__data">15 ноября, 2019</span>
-          </div>
 
-          <div class="reviews__item reviews__item--two">
-            <blockquote class="reviews__quote">
-              <p class="reviews__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
-            </blockquote>
-            <span class="reviews__author">Екатерина Минаева</span>
-            <span class="reviews__data">10 октября, 2019</span>
-          </div>
+        <article class="reviews__wrapper ">
+          <!-- <div class="swiper-container-reviews"> -->
+            <!-- <div class="swiper-wrapper"> -->
 
-          <div class="reviews__item reviews__item--three">
-            <blockquote class="reviews__quote">
-              <p class="reviews__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
-            </blockquote>
-            <span class="reviews__author">Павел Нечаев</span>
-            <span class="reviews__data">2 августа, 2019</span>
-          </div>
-        </div>
+              <!-- <div class="swiper-slide"> -->
+                <div class="reviews__item">
+                  <blockquote class="reviews__quote">
+                    <p class="reviews__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</p>
+                  </blockquote>
+                  <span class="reviews__author">Валерия Гришаева</span>
+                  <span class="reviews__data">15 ноября, 2019</span>
+                </div>
+              <!-- </div> -->
 
-        <div class="reviews__slider slider">
-          <button class="slider__toogle slider__toogle--one slider__toogle--active" type="button"></button>
-          <button class="slider__toogle slider__toogle--two" type="button"></button>
-          <button class="slider__toogle slider__toogle--three" type="button"></button>
+              <!-- <div class="swiper-slide"> -->
+                <div class="reviews__item">
+                  <blockquote class="reviews__quote">
+                    <p class="reviews__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
+                  </blockquote>
+                  <span class="reviews__author">Екатерина Минаева</span>
+                  <span class="reviews__data">10 октября, 2019</span>
+                </div>
+              <!-- </div> -->
 
-          <button class="slider__button slider__button--left" type="button"></button>
-          <button class="slider__button slider__button--right" type="button"></button>
-        </div>
+              <!-- <div class="swiper-slide"> -->
+                <div class="reviews__item">
+                  <blockquote class="reviews__quote">
+                    <p class="reviews__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
+                  </blockquote>
+                  <span class="reviews__author">Павел Нечаев</span>
+                  <span class="reviews__data">2 августа, 2019</span>
+                </div>
+              <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- <div class="swiper-pagination reviews__pagination"></div>
+            <div class="swiper-buttons">
+              <div class="swiper-button-prev swiper-button-prev-reviews"></div>
+              <div class="swiper-button-next swiper-button-next-reviews"></div>
+            </div> -->
+          <!-- </div> -->
+        </article>
       </section>
 
       <section id="Contacts" class="contacts">
@@ -374,7 +389,7 @@
     <script src="js/menu.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU"></script>
     <script src="js/map.js"></script>
-    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper-bundle-min.js"></script>
     <script src="js/swiper.js"></script>
   </body>
 </html>

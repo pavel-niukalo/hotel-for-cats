@@ -659,13 +659,17 @@ a {
 
 .rooms {
   position: relative;
+
+  padding-top: 43px;
+
+  overflow: hidden;
 }
 
 .rooms::before {
   content: "";
 
   position: absolute;
-  top: 35px;
+  top: 100px;
   left: 0px;
 
   width: 150px;
@@ -687,7 +691,7 @@ a {
 }
 
 .rooms__heading {
-  margin-bottom: 55px;
+  margin-bottom: 32px;
 }
 
 .rooms__heading--booking {
@@ -702,18 +706,6 @@ a {
 /* Работа с слайдером */
 
 .rooms__wrapper {
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;*/
-
-  -webkit-box-sizing: border-box;
-
-          box-sizing: border-box;
-  max-width: 320px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -725,6 +717,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
+  box-sizing: border-box;
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 43px;
 }
 
 .rooms__picture {
@@ -739,7 +736,6 @@ a {
   -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
           box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 
-  border: 1px solid #E1E1E1;
   border-radius: 0px 0px 8px 8px;
   border-top: none;
 }
@@ -809,27 +805,17 @@ a {
 }
 
 .rooms__pagination {
-  margin: 26px 0;
+  margin: 6px 0;
 }
 
 /* slider */
 
-/* .slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 60px;
-} */
-
-.swiper-pagination {
-  position: relative;
+.swiper-container-rooms {
+  padding-bottom: 20px;
 }
 
 .swiper-pagination-bullet {
-  margin: 0 6px;
+  margin: 0 6px !important;
   width: 12px;
   height: 12px;
 
@@ -880,6 +866,10 @@ a {
   overflow-x: hidden;
 }
 
+.reviews__wrapper {
+  margin: 0 auto;
+}
+
 .reviews::before {
   content: "";
 
@@ -907,6 +897,8 @@ a {
   width: 290px;
   padding: 21px 21px 20px 56px;
   margin: auto;
+  margin-bottom: 36px;
+
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
           box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -918,13 +910,6 @@ a {
 
   transition: 0.3s linear;
 }
-
-/* Временно */
-.reviews__item--two,
-.reviews__item--three {
-  display: none;
-}
-/* Временно */
 
 .reviews__quote,
 .reviews__text {
@@ -955,10 +940,6 @@ a {
 .reviews__author,
 .reviews__data {
   display: none;
-}
-
-.reviews__slider {
-  margin: 30px auto;
 }
 
 /* contacts */
@@ -2573,7 +2554,7 @@ footer {
   /* rooms */
 
   .rooms::before {
-    top: -15px;
+    top: 115px;
 
     width: 340px;
     height: 105px;
@@ -2583,7 +2564,6 @@ footer {
 
   .rooms--booking {
     padding-top: 80px;
-    padding-bottom: 75px;
   }
 
   .rooms--booking::before {
@@ -2602,10 +2582,6 @@ footer {
     line-height: 43px;
   }
 
-  .rooms__wrapper {
-    max-width: 708px;
-  }
-
   .rooms__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2614,6 +2590,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+
+    width: 678px;
+    margin-bottom: 54px;
   }
 
   .rooms__picture {
@@ -2624,13 +2603,11 @@ footer {
   }
 
   .room__description {
-    padding: 35px 40px;
+    padding: 35px 33px 35px 40px;
     margin-top: 30px;
     margin-left: -109px;
     margin-bottom: 35px;
 
-    box-shadow: none;
-    border: 1px solid #E1E1E1;
     border-radius: 8px 8px 8px 8px;
     z-index: 2;
   }
@@ -2655,7 +2632,9 @@ footer {
   }
 
   .rooms__pagination {
-    margin: 23px 0;
+    bottom: 47px !important;
+
+    margin: 3px 0;
   }
 
   /* reviews */
@@ -2691,23 +2670,10 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
-    min-width: 442px;
+    width: 442px;
     padding: 31px 21px 32px 70px;
     margin: 0;
     margin-right: 30px;
-  }
-
-  .reviews__item:first-child {
-    margin-left: 45px;
-  }
-
-  .reviews__item--two,
-  .reviews__item--three {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;;
   }
 
   .reviews__text {
@@ -2736,8 +2702,10 @@ footer {
     margin-left: auto;
   }
 
-  .reviews__slider {
-    margin: 50px auto;
+  .reviews__pagination {
+    bottom: 47px !important;
+
+    margin: 3px 0;
   }
 
 
@@ -3316,11 +3284,10 @@ footer {
 
   .rooms--booking {
     padding-top: 107px;
-    padding-bottom: 107px;
   }
 
   .rooms::before {
-    top: 45px;
+    top: 130px;
 
     width: 483px;
     height: 160px;
@@ -3328,12 +3295,13 @@ footer {
     background-size: 480px 200px;
   }
 
-  .rooms__wrapper {
-    max-width: 1060px;
-  }
-
   .rooms__heading {
     margin-bottom: 61px;
+  }
+
+  .rooms__item {
+    width: 1030px;
+    margin-bottom: 38px;
   }
 
   .rooms__picture {
@@ -3342,7 +3310,7 @@ footer {
   }
 
   .room__description {
-    padding: 36px 118px 35px 100px;
+    padding: 36px 109px 35px 100px;
     margin: 60px auto 70px -70px;
   }
 
@@ -3368,8 +3336,13 @@ footer {
   }
 
   /* slider */
+  .swiper-container-rooms {
+    padding-bottom: 38px;
+  }
+
   .swiper-buttons {
-    margin-top: -34px;
+    width: 1030px;
+    margin: 15px auto 0 auto;
 
     text-align: right;
   }
@@ -3457,14 +3430,10 @@ footer {
   }
 
   .reviews__item {
-    min-width: 470px;
+    width: 470px;
     padding: 31px 21px 32px 70px;
     margin: 0;
     margin-right: 30px;
-  }
-
-  .reviews__item:first-child {
-    margin-left: 98px;
   }
 
   .reviews__text {
@@ -3472,10 +3441,6 @@ footer {
 
     font-size: 16px;
     line-height: 22px;
-  }
-
-  .reviews__slider {
-    margin: 55px auto;
   }
 
   /* contacts */
@@ -3839,19 +3804,3 @@ footer {
   }
 }
 
-
-@media (min-width: 1530px) {
-  /* reviews для больших экранов */
-  .reviews__slider {
-    display: none;
-  }
-
-  .reviews__item:first-child {
-    margin-left: 30px;
-  }
-
-  .reviews__wrapper {
-    max-width: 1530px;
-    margin: 0 auto;
-  }
-}

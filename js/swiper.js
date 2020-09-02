@@ -1,19 +1,39 @@
-const slider = document.querySelector('.swiper-container')
+const sliderRooms = document.querySelector('.swiper-container-rooms')
+const sliderReviews = document.querySelector('.swiper-container-reviews')
 
-let mySwiper = new Swiper(slider, {
+let mySwiperRooms = new Swiper(sliderRooms, {
   slidesPerView: 1,
-  spaceBetween: 40,
   grabCursor: true,
-  loop: true,
+  centeredSlides: true,
+  // centeredSlidesBounds: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.rooms__pagination',
     type: 'bullets',
     clickable: true,
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-rooms',
+    prevEl: '.swiper-button-prev-rooms',
   },
 })
+
+// let mySwiperReviews = new Swiper(sliderReviews, {
+//   slidesPerView: 1,
+//   // spaceBetween: 30,
+//   // freeMode: true,
+//   centeredSlides: true,
+//   grabCursor: true,
+
+//   pagination: {
+//     el: '.reviews__pagination',
+//     type: 'bullets',
+//     clickable: true,
+//   },
+
+//   navigation: {
+//     nextEl: '.swiper-button-next-reviews',
+//     prevEl: '.swiper-button-prev-reviews',
+//   },
+// })
