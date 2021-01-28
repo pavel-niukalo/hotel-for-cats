@@ -1,11 +1,10 @@
-const sliderRooms = document.querySelector('.swiper-container-rooms')
-const sliderReviews = document.querySelector('.swiper-container-reviews')
+const sliderRooms = document.querySelector('.swiper-container-rooms');
+const sliderReviews = document.querySelector('.swiper-container-reviews');
 
 let mySwiperRooms = new Swiper(sliderRooms, {
   slidesPerView: 1,
   grabCursor: true,
   centeredSlides: true,
-  // centeredSlidesBounds: true,
 
   pagination: {
     el: '.rooms__pagination',
@@ -19,21 +18,19 @@ let mySwiperRooms = new Swiper(sliderRooms, {
   },
 })
 
-// let mySwiperReviews = new Swiper(sliderReviews, {
-//   slidesPerView: 1,
-//   // spaceBetween: 30,
-//   // freeMode: true,
-//   centeredSlides: true,
-//   grabCursor: true,
+let mySwiperReviews = new Swiper(sliderReviews, {
+  slidesPerView: 1,
+  centeredSlides: true,
+  grabCursor: true,
 
-//   pagination: {
-//     el: '.reviews__pagination',
-//     type: 'bullets',
-//     clickable: true,
-//   },
+  pagination: {
+    el: '.reviews__pagination',
+    type: 'bullets',
+    clickable: true,
+  },
 
-//   navigation: {
-//     nextEl: '.swiper-button-next-reviews',
-//     prevEl: '.swiper-button-prev-reviews',
-//   },
-// })
+  navigation: {
+    nextEl: '.swiper-button-next-reviews',
+    prevEl: '.swiper-button-prev-reviews',
+  },
+})
