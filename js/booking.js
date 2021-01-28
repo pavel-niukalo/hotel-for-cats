@@ -13,6 +13,7 @@
 
     let booking = templateBooking.cloneNode(true);
 
+    document.body.style.overflow = 'hidden';
     document.querySelector('main')
     .append(booking);
 
@@ -23,6 +24,7 @@
     let closeBooking = function () {
       background.classList.remove('background__page--isActive');
 
+      document.body.style.overflow = 'auto';
       booking.remove();
 
       document.removeEventListener('keydown', onBookingEscPress);
