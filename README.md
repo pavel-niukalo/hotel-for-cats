@@ -7,7 +7,7 @@
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox
 
-[Ссылка на проект](https://pavel-nyukalo.github.io/hotel-for-cats/)
+[Ссылка на проект](https://pavel-niukalo.github.io/hotel-for-cats/)
 
 ## Используемые технологии
 * HTML
